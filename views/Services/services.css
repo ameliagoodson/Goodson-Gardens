@@ -1,0 +1,17 @@
+:root {
+  --dark-olive-green: #506742;
+  --maximum-green: #628b48;
+  --raspberry: #e50b5e;
+  --cornsilk: #fcf2d7;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.card {
+  background-color: var(--maximum-green);
+}
