@@ -28,11 +28,22 @@
     <!-- My style sheet -->
     <link rel="stylesheet" href="./booking.css" />
     <title>Document</title>
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <!-------- BODY -------->
   <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="../../index.html">Goodson Gardening</a>
+      <img
+        src="../../assets/flowerlogo.svg"
+        alt="pink waratah flower logo"
+        class="logo"
+      />
       <button
         class="navbar-toggler"
         type="button"
@@ -66,6 +77,18 @@
         </ul>
       </div>
     </nav>
-    <h1>I am the booking page</h1>
+    <!-- Calendly -->
+    <h1 class="header-booking">Make a booking</h1>
+    <!-- Calendly inline widget begin -->
+    <div
+      class="calendly-inline-widget"
+      data-url="https://calendly.com/ameliagoodson/gardenservices?text_color=506742&primary_color=e50b5e"
+      style="min-width: 320px; height: 630px;"
+    ></div>
+    <script
+      type="text/javascript"
+      src="https://assets.calendly.com/assets/external/widget.js"
+    ></script>
+    <!-- Calendly inline widget end -->
   </body>
 </html>

@@ -30,8 +30,10 @@ html {
   color: #506742;
 }
 .navbar-brand {
-  margin-right: 5px;
   font-weight: bold;
+  margin-right: 5px;
+  font-family: "Comfortaa", cursive;
+  font-size: 22px;
 }
 .logo {
   height: 40px;

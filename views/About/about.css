@@ -4,6 +4,12 @@
   --raspberry: #e50b5e;
   --cornsilk: #fcf2d7;
 }
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
 .navbar,
 .navbar-brand {
   background-color: #fcf2d7;
@@ -13,12 +19,16 @@
 .navbar-brand {
   color: #506742;
 }
-
-body,
-html {
-  height: 100%;
-  width: 100%;
-  background-color: white;
+.navbar-brand {
+  font-weight: bold;
+  margin-right: 5px;
+  font-family: "Comfortaa", cursive;
+  font-size: 22px;
+}
+.logo {
+  height: 40px;
+  width: 40px;
+  margin-right: 30px;
 }
 
 .footer {
