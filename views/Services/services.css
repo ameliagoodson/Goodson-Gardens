@@ -17,7 +17,7 @@ html {
 .navbar,
 .navbar-brand {
   background-color: #fcf2d7;
-  font-size: 20px;
+  font-size: 18px;
 }
 .nav-link,
 .navbar-brand {
@@ -27,7 +27,7 @@ html {
   font-weight: bold;
   margin-right: 5px;
   font-family: "Comfortaa", cursive;
-  font-size: 22px;
+  font-size: 20px;
 }
 .logo {
   height: 40px;
@@ -41,7 +41,7 @@ html {
   text-align: center;
 }
 .text-services {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 .row {
@@ -55,7 +55,7 @@ html {
 }
 .card-title {
   font-family: "Comfortaa", cursive;
-  font-size: 25px;
+  font-size: 24px;
   text-align: center;
 }
 .card-icon {
@@ -64,7 +64,7 @@ html {
   margin-bottom: 30px;
 }
 .card-text {
-  font-size: 18px;
+  font-size: 16px;
 }
 /* Footer */
 .footer {

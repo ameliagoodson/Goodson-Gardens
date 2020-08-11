@@ -13,7 +13,7 @@ html {
 .navbar,
 .navbar-brand {
   background-color: #fcf2d7;
-  font-size: 20px;
+  font-size: 18px;
 }
 .nav-link,
 .navbar-brand {
@@ -23,7 +23,7 @@ html {
   font-weight: bold;
   margin-right: 5px;
   font-family: "Comfortaa", cursive;
-  font-size: 22px;
+  font-size: 20px;
 }
 .logo {
   height: 40px;

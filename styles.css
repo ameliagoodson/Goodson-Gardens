@@ -23,17 +23,17 @@ html {
 .navbar,
 .navbar-brand {
   background-color: #fcf2d7;
-  font-size: 20px;
 }
 .nav-link,
 .navbar-brand {
   color: #506742;
+  font-size: 18px;
 }
 .navbar-brand {
   font-weight: bold;
   margin-right: 5px;
   font-family: "Comfortaa", cursive;
-  font-size: 22px;
+  font-size: 20px;
 }
 .logo {
   height: 40px;
@@ -46,13 +46,17 @@ html {
   background-repeat: no-repeat;
   background-image: url(./assets/header-flower.jpg);
   background-size: cover;
-  height: 30rem;
+  height: 22rem;
   color: white;
+  margin-bottom: 20px;
+}
+.home-title {
+  font-size: 26px;
 }
 .home-subtitle {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .btn-home {
@@ -81,7 +85,7 @@ html {
 .card-home {
   background-color: #fcf2d7;
   margin: 20px;
-  font-size: 20px;
+  font-size: 16px;
   padding: 20px;
 }
 
