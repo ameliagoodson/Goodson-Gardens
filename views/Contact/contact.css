@@ -30,7 +30,11 @@ html {
   height: 40px;
   width: 40px;
 }
-
+/* Contact form */
+.input {
+  display: block;
+}
+/* Footer */
 .footer {
   height: 4rem;
   background-color: #e50b5e;
