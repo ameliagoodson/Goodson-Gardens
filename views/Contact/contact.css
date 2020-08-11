@@ -1,6 +1,6 @@
 :root {
   --dark-olive-green: #506742;
-  --maximum-green: #628b48;
+  --maximum-green: #c0e4a9;
   --raspberry: #e50b5e;
   --cornsilk: #fcf2d7;
 }
@@ -31,11 +31,47 @@ html {
   width: 40px;
 }
 /* Contact form */
-.input {
+.container {
+  min-width: 40%;
+  margin: auto;
+  background-color: var(--maximum-green);
   display: block;
+  margin-top: 30px;
+}
+.form-header {
+  color: white;
+  font-family: "Comfortaa", cursive;
+  width: 100%;
+  text-align: center;
+  background-image: url(../../assets/header-small-green-leaves-blurred-dark.jpg);
+}
+.contact-form {
+  text-align: center;
+  min-height: 18rem;
+}
+.input-name,
+.input-email,
+.input-message {
+  width: 90%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+.input-message {
+  margin-bottom: 10px;
+}
+.button-contact {
+  width: 5rem;
+  display: block;
+  margin: auto;
+  padding: 5px 10px 5px 10px;
+  background-color: var(--raspberry);
+  border: none;
+  color: white;
 }
 /* Footer */
 .footer {
   height: 4rem;
-  background-color: #e50b5e;
+  background-color: var(--raspberry);
 }

@@ -84,25 +84,38 @@
         </ul>
       </div>
     </nav>
-    <!-- End of navigation bar -->
-    <div class="h1">Get in touch</div>
-    <form action="https://formspree.io/xeqrdgyw" method="POST">
-      <input type="text" class="input name" name="name" placeholder="Name" />
-      <input
-        type="email"
-        class="input email"
-        name="_replyto"
-        placeholder="Email"
-      />
-      <textarea
-        class="input message"
-        name="message"
-        placeholder="Write your message"
-      ></textarea>
+    <!-- Start of Page Content -->
 
-      <button type="submit">Send</button>
-
-      <div class="status"></div>
-    </form>
+    <div class="container">
+      <div class="row">
+        <h1 class="form-header">Get in Touch</h1>
+      </div>
+      <form
+        action="https://formspree.io/xeqrdgyw"
+        method="POST"
+        class="contact-form"
+      >
+        <input
+          type="text"
+          class="input-name name"
+          name="name"
+          placeholder="Name"
+        />
+        <input
+          type="email"
+          class="input-email email"
+          name="_replyto"
+          placeholder="Email"
+        />
+        <textarea
+          class="input-message message"
+          name="message"
+          placeholder="Write your message"
+        ></textarea>
+        <button type="submit" class="button-contact">Send</button>
+        <!-- Empty div where validation messages are displayed -->
+        <div class="status"></div>
+      </form>
+    </div>
   </body>
 </html>

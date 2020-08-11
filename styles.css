@@ -1,6 +1,6 @@
 /* Colour palette
 Dark olive green: #506742
-Maximum green: #628B48
+Maximum green: #c0e4a9
 Raspberry: #E50B5E
 Cornsilk (very pale pink): #FCF2D7
 White: #FFFFFF
@@ -8,7 +8,7 @@ White: #FFFFFF
 
 :root {
   --dark-olive-green: #506742;
-  --maximum-green: #628b48;
+  --maximum-green: #c0e4a9;
   --raspberry: #e50b5e;
   --cornsilk: #fcf2d7;
 }
