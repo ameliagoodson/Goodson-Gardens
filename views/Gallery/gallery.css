@@ -12,6 +12,14 @@ html {
   width: 100%;
   background-color: white;
 }
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 4rem;
+}
 
 /* Navigation bar */
 .navbar,
