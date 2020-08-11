@@ -52,11 +52,11 @@ html {
 }
 .home-title {
   font-size: 26px;
+  padding-top: 20px;
 }
 .home-subtitle {
-  margin-top: 20px;
-  margin-bottom: 20px;
   font-size: 20px;
+  padding-bottom: 10px;
 }
 
 .btn-home {

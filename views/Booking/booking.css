@@ -36,6 +36,13 @@ html {
   text-align: center;
   margin: 20px;
 }
+/* .container {
+  height: 100vh;
+} */
+.calendly-inline-widget {
+  min-width: 320px;
+  height: 630px;
+}
 /* Footer */
 .footer {
   height: 4rem;
