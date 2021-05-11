@@ -1,99 +1,155 @@
-/* Colour palette
-Dark olive green: #506742
-Maximum green: #c0e4a9
-Raspberry: #E50B5E
-Cornsilk (very pale pink): #FCF2D7
-White: #FFFFFF
-*/
-
 :root {
-  --dark-olive-green: #506742;
-  --maximum-green: #c0e4a9;
-  --raspberry: #e50b5e;
-  --cornsilk: #fcf2d7;
+	--dark-olive-green: #506742;
+	--maximum-green: #c0e4a9;
+	--raspberry: #e50b5e;
+	--cornsilk: #fcf2d7;
+	--darkblue: rgb(34, 104, 130);
+	--mediumblue: rgb(43, 138, 173);
+	--lightblue: rgb(105, 185, 255);
+	--lightgrey: rgb(230, 232, 236);
 }
 
 body,
 html {
-  height: 100%;
-  width: 100%;
-  background-color: white;
+	height: 100%;
+	width: 100%;
+	background-color: var(--lightgrey);
 }
-
-.navbar,
-.navbar-brand {
-  background-color: #fcf2d7;
-}
-.nav-link,
-.navbar-brand {
-  color: #506742;
-  font-size: 18px;
+.navbar {
+	background-color: white;
 }
 .navbar-brand {
-  font-weight: bold;
-  margin-right: 5px;
-  font-family: "Comfortaa", cursive;
-  font-size: 20px;
+	font-weight: bold;
+	margin-right: 5px;
+	font-family: "Quicksand", sans-serif;
+	font-size: 2rem;
+	color: var(--darkblue) !important;
 }
 .logo {
-  height: 40px;
-  width: 40px;
+	height: 40px;
+	width: 40px;
+	margin-left: 10px;
+}
+.nav-link {
+	color: var(--darkblue) !important;
 }
 .container {
-  width: 100%;
+	width: 100%;
 }
 .jumbotron {
-  background-repeat: no-repeat;
-  background-image: url(./assets/header-flower.jpg);
-  background-size: cover;
-  height: 22rem;
-  color: white;
-  margin-bottom: 20px;
+	background-size: auto, cover;
+	background-color: white;
+	background-image: linear-gradient(
+			rgba(31, 85, 105, 0.7),
+			rgba(31, 85, 105, 0.2)
+		),
+		url(./assets/hero1-australian-natives.jpg);
+	background-position: center;
+	height: 37rem;
+	border-top: var(--lightblue) 2px solid;
+	border-bottom: var(--lightblue) 2px solid;
+	position: relative;
+	display: flex;
+	justify-content: center;
 }
-.home-title {
-  font-size: 26px;
-  padding-top: 20px;
+.jumbotron-text-container {
+	max-height: 400px;
+	max-width: 700px;
+	justify-content: center;
+	display: flex;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
-.home-subtitle {
-  font-size: 20px;
-  padding-bottom: 10px;
+#home-title {
+	font-size: 3rem;
+	padding-top: 20px;
+	font-variant: small-caps;
+}
+#home-subtitle {
+	font-size: 20px;
+	padding-bottom: 10px;
 }
 
 .btn-home {
-  background-color: #e50b5e;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 20px;
+	background-color: var(--lightblue);
+	padding: 5px 10px 5px 10px;
+	font-size: 22px;
+	color: white;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	font-variant: small-caps;
 }
 .row {
-  width: 100%;
+	width: 100%;
 }
 .card-jumbotron {
-  max-width: 30rem;
-  border-radius: 20px;
-  max-height: 15rem;
-  text-align: center;
-  background-color: white;
-  opacity: 0.9;
-  color: var(--dark-olive-green);
+	max-width: 40rem;
+	border-radius: 0px;
+	max-height: 15rem;
+	text-align: center;
+	color: white;
 }
 .card-home {
-  background-color: #fcf2d7;
-  margin: 20px;
-  font-size: 16px;
-  padding: 20px;
+	background-color: white;
+	margin: 20px;
+	font-size: 16px;
+	padding: 20px;
+	border-radius: 5px;
 }
-
+#card-home1,
+#card-home2 {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.card-title {
+	text-align: center;
+	color: var(--mediumblue);
+	font-variant: small-caps;
+}
+.card-text {
+	color: black;
+}
 .column {
-  background-color: #fcf2d7;
-  margin-top: 20px;
+	background-color: #fcf2d7;
+	margin-top: 20px;
 }
+/* Footer */
 .footer {
-  height: 4rem;
-  background-color: #e50b5e;
+	height: 5rem;
+	background-color: var(--mediumblue);
+	color: white;
+}
+.footer-brand {
+	font-family: "Comfortaa", cursive;
+	font-size: 24px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+.footer-subtitle {
+	font-size: 16px;
+}
+.footer-email {
+	color: var(--dark-olive-green);
+	text-decoration: underline;
+}
+.footer-email:hover {
+	color: var(--raspberry);
+}
+.footer-logo {
+	height: 50px;
+	width: 50px;
+}
+.col2-footer {
+	margin-top: 10px;
+}
+.footer-link,
+.footer-link:hover {
+	font-size: 16px;
+	color: var(--dark-olive-green);
 }

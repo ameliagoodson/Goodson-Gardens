@@ -1,73 +1,84 @@
 :root {
-  --dark-olive-green: #506742;
-  --maximum-green: #c0e4a9;
-  --raspberry: #e50b5e;
-  --cornsilk: #fcf2d7;
+	--dark-olive-green: #506742;
+	--maximum-green: #c0e4a9;
+	--raspberry: #e50b5e;
+	--cornsilk: #fcf2d7;
+	--darkblue: rgb(34, 104, 130);
+	--mediumblue: rgb(43, 138, 173);
+	--lightblue: rgb(105, 185, 255);
+	--lightgrey: rgb(230, 232, 236);
 }
 body,
 html {
-  height: 100vh;
-  width: 100vw;
-  background-color: white;
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--lightgrey);
 }
 /* Navigation Bar */
 .navbar {
-  width: 100vw;
+	width: 100vw;
 }
 .navbar,
 .navbar-brand {
-  background-color: #fcf2d7;
-  font-size: 18px;
+	background-color: white;
+	font-size: 18px;
 }
-.nav-link,
+
 .navbar-brand {
-  color: #506742;
-}
-.navbar-brand {
-  font-weight: bold;
-  margin-right: 5px;
-  font-family: "Comfortaa", cursive;
-  font-size: 20px;
+	font-weight: bold;
+	margin-right: 5px;
+	font-family: "Quicksand", sans-serif;
+	font-size: 2rem;
+	color: var(--darkblue) !important;
 }
 .logo {
-  height: 40px;
-  width: 40px;
+	height: 40px;
+	width: 40px;
 }
+.nav-link {
+	color: var(--darkblue) !important;
+}
+
 /* Services page content */
 .heading-services {
-  font-size: 30px;
-  font-family: "Comfortaa", cursive;
-  margin: 20px;
-  text-align: center;
+	font-size: 30px;
+	font-family: "Comfortaa", cursive;
+	margin: 20px;
+	text-align: center;
 }
 .text-services {
-  font-size: 18px;
-  text-align: center;
+	font-size: 18px;
+	text-align: center;
 }
 .row {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .card-services {
-  width: 25rem;
-  margin: 20px;
-  border: none;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	margin-bottom: 10px;
 }
 .card-title {
-  font-family: "Comfortaa", cursive;
-  font-size: 24px;
-  text-align: center;
+	font-family: "Quicksand", sans-serif;
+	font-size: 18px;
+	text-align: center;
+	font-variant: small-caps;
 }
 .card-icon {
-  height: 60px;
-  width: 60px;
-  margin-bottom: 30px;
+	height: 50px;
+	width: 50px;
+	margin-bottom: 30px;
 }
 .card-text {
-  font-size: 16px;
+	font-size: 16px;
 }
 /* Footer */
 .footer {
-  height: 4rem;
-  background-color: #e50b5e;
+	height: 7rem;
+	background-color: var(--dark-olive-green);
+	color: white;
 }

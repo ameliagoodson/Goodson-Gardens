@@ -1,50 +1,54 @@
 :root {
-  --dark-olive-green: #506742;
-  --maximum-green: #c0e4a9;
-  --raspberry: #e50b5e;
-  --cornsilk: #fcf2d7;
+	--dark-olive-green: #506742;
+	--maximum-green: #c0e4a9;
+	--raspberry: #e50b5e;
+	--cornsilk: #fcf2d7;
+	--darkblue: rgb(34, 104, 130);
+	--mediumblue: rgb(43, 138, 173);
+	--lightblue: rgb(105, 185, 255);
+	--lightgrey: rgb(230, 232, 236);
 }
 body,
 html {
-  height: 100%;
-  width: 100%;
-  background-color: white;
+	height: 100%;
+	width: 100%;
+	background-color: var(--lightgrey);
 }
 .navbar,
 .navbar-brand {
-  background-color: #fcf2d7;
-  font-size: 18px;
+	background-color: #fcf2d7;
+	font-size: 18px;
 }
 .nav-link,
 .navbar-brand {
-  color: #506742;
+	color: #506742;
 }
 .navbar-brand {
-  font-weight: bold;
-  margin-right: 5px;
-  font-family: "Comfortaa", cursive;
-  font-size: 20px;
+	font-weight: bold;
+	margin-right: 5px;
+	font-family: "Comfortaa", cursive;
+	font-size: 20px;
 }
 .logo {
-  height: 40px;
-  width: 40px;
+	height: 40px;
+	width: 40px;
 }
 /* Content */
 .header-booking {
-  font-family: "Comfortaa", cursive;
-  font-size: 30px;
-  text-align: center;
-  margin: 20px;
+	font-family: "Comfortaa", cursive;
+	font-size: 30px;
+	text-align: center;
+	margin: 20px;
 }
 /* .container {
   height: 100vh;
 } */
 .calendly-inline-widget {
-  min-width: 320px;
-  height: 630px;
+	min-width: 320px;
+	height: 630px;
 }
 /* Footer */
 .footer {
-  height: 4rem;
-  background-color: #e50b5e;
+	height: 4rem;
+	background-color: #e50b5e;
 }

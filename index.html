@@ -27,9 +27,8 @@
     ></script>
     <!-- Google fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
-      rel="stylesheet"
-    />
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    
     <!-- My style sheet -->
     <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
@@ -38,12 +37,8 @@
     <!-- Navigation Bar -->
     <div class="page-container">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="./index.html">Goodson Gardening</a>
-        <img
-          src="./assets/flowerlogo.svg"
-          alt="pink waratah flower logo"
-          class="logo"
-        />
+        <a class="navbar-brand" href="./index.html">Goodson Gardens<img src="./assets/flowerlogo.svg" alt="pink waratah flower logo" class="logo" /></a>
+        
         <button
           class="navbar-toggler"
           type="button"
@@ -57,9 +52,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./views/About/about.html">About</a>
-            </li>
+           
             <li class="nav-item">
               <a class="nav-link" href="./views/Services/services.html"
                 >Services</a
@@ -87,8 +80,8 @@
       <div class="jumbotron">
         <div class="jumbotron-text-container">
           <div class="card-jumbotron">
-            <h1 class="home-title">Dreaming of a beautiful garden?</h1>
-            <h2 class="home-subtitle">We can make that happen</h2>
+            <h1 id="home-title">Dreaming of a beautiful garden?</h1>
+            <h2 id="home-subtitle">We can make that happen</h2>
             <a
               class="btn btn-home"
               href="./views/Services/services.html"
@@ -102,8 +95,8 @@
       <div class="container">
         <div class="row">
           <div class="card-home">
-            <h1>Garden creation and maintenance</h1>
-            <p>
+            <h1 class="card-title">Garden creation and maintenance</h1>
+            <p class="card-text">
               Often when unexperienced people attempt to work on the landscaping
               of their garden, they will tend to realise its complexity over
               time. Features may be overlooked, ideas may be lacking, time may
@@ -112,26 +105,28 @@
               simple solution – hire the Sydney landscaping experts who
               certainly will implement all your ideas into practice.
             </p>
-            <a href="./About/about.html">Link to about page</a>
+            
           </div>
         </div>
         <div class="row">
           <div class="col col1">
-            <div class="card-home">
-              <h2>A title here</h2>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+            <div class="card-home" id="card-home1">
+              <h2 class="card-title">A title here</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
               quod nulla odit labore porro ad, tempore, sit minima dignissimos
               libero impedit recusandae reiciendis aut doloremque officiis
-              expedita deleniti asperiores cupiditate.
+              expedita deleniti asperiores cupiditate.</p>
             </div>
           </div>
-          <div class="col col2">
-            <div class="card-home">
-              <h2>A title here</h2>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <div class="col col2" >
+            <div class="card-home" id="card-home2">
+              <h2 class="card-title">A title here</h2>
+              <p class="card-text">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Provident itaque eos illo rerum impedit nesciunt nam explicabo
               soluta totam corporis. Assumenda laborum iusto laudantium vitae
-              reprehenderit qui facere nisi neque!
+              reprehenderit qui facere nisi neque! 
+              </p>
             </div>
           </div>
         </div>
@@ -139,7 +134,41 @@
       </div>
       <footer class="footer">
         <div class="container">
-          <span class="text-muted">Place sticky footer content here.</span>
+          <div class="row">
+            <div class="col">
+              <h1 class="footer-brand">
+                Goodson Gardens
+                <img src="./assets/flowerlogo.svg" class="footer-logo" />
+              </h1>
+              <h2 class="footer-subtitle">
+                Call: 0478 000 000<br /><a
+                  href="mailto:emailaddress@gmail.com"
+                  class="footer-email"
+                  >Email: emailaddress@gmail.com</a
+                >
+              </h2>
+            </div>
+            <div class="col col2-footer">
+              <ul>
+
+                <li>
+                  <a href="./views/Services/services.html" class="footer-link">
+                    Services</a
+                  >
+                </li>
+                <li>
+                  <a href="./views/Gallery/gallery.html" class="footer-link">
+                    Gallery</a
+                  >
+                </li>
+                <li>
+                  <a href="./views/Contact/contact.html" class="footer-link">
+                    Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

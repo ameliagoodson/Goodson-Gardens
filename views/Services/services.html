@@ -27,10 +27,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -44,7 +41,7 @@
   <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="../../index.html">Goodson Gardening</a>
+      <a class="navbar-brand" href="../../index.html">Goodson Gardens</a>
       <img
         src="../../assets/flowerlogo.svg"
         alt="pink waratah flower logo"
@@ -63,9 +60,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../About/about.html">About</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="../Services/services.html">Services</a>
           </li>
@@ -77,8 +72,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../Booking/booking.html"
-              >Make a Booking</a
-            >
+              >Make a Booking</a>
           </li>
         </ul>
       </div>
@@ -94,58 +88,36 @@
           cupiditate laudantium modi!
         </p>
       </div>
-    </div>
     <div class="row">
-      <div class="card card-services">
-        <h5 class="card-title">
-          Garden maintenance
-          <img src="../../assets/icon-shovel.svg" class="card-icon" />
-        </h5>
-        <img
-          class="card-img-top"
-          src="../../assets/card-pruning.jpg"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-        </div>
-      </div>
-      <div class="card card-services">
-        <h5 class="card-title">
-          Flower gardens
-          <img src="../../assets/icon-rose.svg" class="card-icon" />
-        </h5>
-
-        <img
-          class="card-img-top"
-          src="../../assets/card-australian-natives.jpg"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-        </div>
-      </div>
-
-      <div class="card card-services">
-        <h5 class="card-title">
-          Retaining walls
+      <div class="col-sm">
+        <div class="card card-services">
+          <h5 class="card-title">
+            Garden maintenance
+          </h5>
+          <!-- <img src="../../assets/icon-shovel.svg" class="card-icon" /> -->
           <img
-            src="../../assets/icon-retaining-wall.svg"
-            alt="icon of trowel above low brick wall"
-            class="card-icon"
+            class="card-img-top"
+            src="../../assets/services/gardenmaintenance1.png"
+            alt="Card image cap"
           />
-        </h5>
+          <div class="card-body">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card card-services">
+          <h5 class="card-title">
+            Flower gardens
+          </h5>
+        <!-- <img src="../../assets/icon-rose.svg" class="card-icon" /> -->
         <img
           class="card-img-top"
-          src="../../assets/card-retaining-wall.jpg"
+          src="../../assets/services/flowergarden.png"
           alt="Card image cap"
         />
         <div class="card-body">
@@ -153,23 +125,40 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
       </div>
+      </div>
+      <div class="col-sm">
+          <div class="card card-services">
+            <h5 class="card-title">
+              Retaining walls
+            </h5>
+            <!-- <img src="../../assets/icon-retaining-wall.svg" alt="icon of trowel above low brick wall" class="card-icon" /> -->
+            <img
+              class="card-img-top"
+              src="../../assets/services/wall2.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+      </div>
     </div>
-    <div class="row">
+  <div class="row">
+    <div class="col-sm">
       <div class="card card-services">
         <h5 class="card-title">
           Veggie gardens
-          <img
-            src="../../assets/icon-vegetables.svg"
-            alt=""
-            class="card-icon"
-          />
         </h5>
+        <!-- <img src="../../assets/icon-vegetables.svg" alt="" class="card-icon" /> -->
         <img
           class="card-img-top"
-          src="../../assets/card-vegetable-garden.jpg"
+          src="../../assets/services/vegetables2.png"
           alt="small vegetable garden"
         />
         <div class="card-body">
@@ -180,41 +169,16 @@
           <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
       </div>
+    </div>
+    <div class="col-sm">
       <div class="card card-services">
         <h5 class="card-title">
           Turfing and lawn care
-          <img
-            src="../../assets/icon-grass.svg"
-            alt="icon of grass"
-            class="card-icon"
-          />
         </h5>
+        <!-- <img src="../../assets/icon-grass.svg" alt="icon of grass" class="card-icon" /> -->
         <img
           class="card-img-top"
-          src="../../assets/card-turfing.jpg"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-        </div>
-      </div>
-
-      <div class="card card-services">
-        <h5 class="card-title">
-          Chicken coops
-          <img
-            src="../../assets/icon-chicken.svg"
-            alt="icon of chicken"
-            class="card-icon"
-          />
-        </h5>
-        <img
-          class="card-img-top"
-          src="../../assets/card-chicken-coop.jpg"
+          src="../../assets/services/lawnmower.png"
           alt="Card image cap"
         />
         <div class="card-body">
@@ -226,10 +190,45 @@
         </div>
       </div>
     </div>
+    <div class="col-sm">
+      <div class="card card-services">
+        <h5 class="card-title">
+          Chicken coops
+        </h5>
+        <!-- <img src="../../assets/icon-chicken.svg" alt="icon of chicken" class="card-icon" /> -->
+        <img
+          class="card-img-top"
+          src="../../assets/services/chicken2.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
     <footer class="footer">
       <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+        <div class="row">
+          <div class="col">
+            <p>hello there</p>
+          </div>
+          <div class="col">
+            <ul>
+              
+              <li><a href="./views/Services/services.html"> Services</a></li>
+              <li><a href="./views/Gallery/gallery.html"> Gallery</a></li>
+              <li><a href="./views/Contact/contact.html"> Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
+   
   </body>
 </html>
