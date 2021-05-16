@@ -1,8 +1,5 @@
 :root {
-	--dark-olive-green: #506742;
-	--maximum-green: #c0e4a9;
 	--raspberry: #e50b5e;
-	--cornsilk: #fcf2d7;
 	--darkblue: rgb(34, 104, 130);
 	--mediumblue: rgb(43, 138, 173);
 	--lightblue: rgb(105, 185, 255);
@@ -15,23 +12,31 @@ html {
 	width: 100%;
 	background-color: var(--lightgrey);
 }
+.page-container {
+	position: relative;
+	min-height: 100vh;
+}
 .navbar {
 	background-color: white;
+	border-bottom: var(--lightblue) 2px solid;
+	padding: 0px 0px 0px 5px;
 }
 .navbar-brand {
 	font-weight: bold;
 	margin-right: 5px;
 	font-family: "Quicksand", sans-serif;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: var(--darkblue) !important;
 }
 .logo {
-	height: 40px;
-	width: 40px;
+	height: 35px;
+	width: 35px;
 	margin-left: 10px;
+	margin-bottom: 5px;
 }
 .nav-link {
 	color: var(--darkblue) !important;
+	font-size: 16px;
 }
 .container {
 	width: 100%;
@@ -40,13 +45,12 @@ html {
 	background-size: auto, cover;
 	background-color: white;
 	background-image: linear-gradient(
-			rgba(31, 85, 105, 0.7),
+			rgba(5, 10, 12, 0.7),
 			rgba(31, 85, 105, 0.2)
 		),
 		url(./assets/hero1-australian-natives.jpg);
 	background-position: center;
 	height: 37rem;
-	border-top: var(--lightblue) 2px solid;
 	border-bottom: var(--lightblue) 2px solid;
 	position: relative;
 	display: flex;
@@ -110,7 +114,9 @@ html {
 .card-title {
 	text-align: center;
 	color: var(--mediumblue);
-	font-variant: small-caps;
+	font-size: 2rem;
+	font-family: "Quicksand", sans-serif;
+	font-weight: bold;
 }
 .card-text {
 	color: black;
@@ -120,36 +126,50 @@ html {
 	margin-top: 20px;
 }
 /* Footer */
+.container-footer {
+	padding: 10px;
+}
+
 .footer {
-	height: 5rem;
-	background-color: var(--mediumblue);
-	color: white;
+	padding-left: 10px;
+	background-color: #e50b5e;
+	bottom: 0;
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
 }
 .footer-brand {
-	font-family: "Comfortaa", cursive;
+	font-family: "Quicksand", sans-serif;
 	font-size: 24px;
 	margin-top: 10px;
 	margin-bottom: 0px;
+	color: white;
 }
 .footer-subtitle {
 	font-size: 16px;
+	color: white;
 }
-.footer-email {
-	color: var(--dark-olive-green);
-	text-decoration: underline;
-}
+.footer-email,
 .footer-email:hover {
-	color: var(--raspberry);
+	color: white;
 }
+
 .footer-logo {
-	height: 50px;
-	width: 50px;
+	height: 35px;
+	width: 35px;
+	background-color: white;
 }
-.col2-footer {
-	margin-top: 10px;
+
+.footer-list {
+	font-size: 20px;
+	list-style-type: none;
 }
-.footer-link,
-.footer-link:hover {
-	font-size: 16px;
-	color: var(--dark-olive-green);
+
+.footer-link {
+	margin: 10px;
+}
+#footer-link1,
+#footer-link2 {
+	color: white;
 }
