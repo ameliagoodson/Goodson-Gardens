@@ -19,7 +19,7 @@ html {
 			rgba(69, 95, 84, 0.8),
 			rgba(69, 95, 84, 0.8)
 		),
-		url(/Goodson-Gardens/assets/wallpaper-leaves3.jpg);
+		url("../../assets/wallpaper-leaves3.jpg");
 }
 /* Navigation Bar */
 .navbar {
