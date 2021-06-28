@@ -58,25 +58,29 @@ html {
 .form-header {
 	margin-bottom: 0px;
 	padding: 10px;
-	color: white;
-	font-family: "Comfortaa", cursive;
-	font-size: 30px;
+	font-family: "Quicksand", sans-serif;
+	font-size: 1.5rem;
+	color: var(--darkblue);
 	width: 100%;
 	text-align: center;
-	background-color: var(--dark-olive-green);
+	background-color: white;
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
 }
 .contact-form {
 	text-align: center;
 	min-height: 18rem;
-	background-color: var(--maximum-green);
+	background-color: white;
+	border-bottom-left-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
 }
 .input-name,
 .input-email,
 .input-message {
 	width: 90%;
 	margin-top: 10px;
-	border: none;
-	border-radius: 10px;
+	border: var(--darkblue) 1px solid;
+	border-radius: 0.25rem;
 	padding: 10px;
 }
 .input-message {
@@ -88,31 +92,34 @@ html {
 	padding-right: 30px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	font-size: 22px;
+	font-size: 1rem;
+	border-radius: 0.25rem;
 	font-weight: bold;
 	color: white;
 	margin-bottom: 20px;
 	border: none;
 }
 .contact-col {
-	background-color: #506742;
-	color: white;
+	background-color: white;
+	color: var(--darkblue);
 	height: 30rem;
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
 }
 /* Google Maps */
 .map-header {
 	padding: 10px;
-	color: white;
-	font-family: "Comfortaa", cursive;
-	font-size: 30px;
+	color: var(--darkblue);
+	font-family: "Quicksand", sans-serif;
+	font-size: 1.5rem;
 	text-align: center;
 }
 .contact-details {
-	font-size: 20px;
+	font-size: 1rem;
 	display: block;
 }
 .emailAddress {
-	color: white;
+	color: var(--darkblue);
 	text-decoration: underline;
 }
 .emailAddress:hover {
