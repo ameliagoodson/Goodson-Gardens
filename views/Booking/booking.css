@@ -17,7 +17,7 @@ html {
 			rgba(69, 95, 84, 0.8),
 			rgba(69, 95, 84, 0.8)
 		),
-		url(/assets/services/wallpaper-leaves3.jpg);
+		url(../../assets/wallpaper-leaves3.jpg);
 }
 .page-container {
 	position: relative;
@@ -28,23 +28,27 @@ html {
 	border-bottom: var(--lightblue) 2px solid;
 	padding: 0px 0px 0px 5px;
 }
+.nav-link {
+	color: var(--darkblue) !important;
+	font-size: 0.8rem;
+}
 
 .navbar-brand {
 	font-weight: bold;
 	margin-right: 5px;
 	font-family: "Quicksand", sans-serif;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	color: var(--darkblue) !important;
 }
 .logo {
-	height: 35px;
-	width: 35px;
+	height: 30px;
+	width: 30px;
 	margin-left: 10px;
 	margin-bottom: 5px;
 }
 /* Content */
 .header-booking {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-family: "Quicksand", sans-serif;
 	font-weight: bold;
 	font-variant: small-caps;
@@ -59,7 +63,7 @@ html {
 }
 /* Footer */
 .container-footer {
-	padding: 10px;
+	padding: 5px;
 }
 
 .footer {
@@ -74,7 +78,7 @@ html {
 }
 .footer-brand {
 	font-family: "Quicksand", sans-serif;
-	font-size: 24px;
+	font-size: 1rem;
 	margin-top: 10px;
 	margin-bottom: 0px;
 	color: white;
@@ -88,21 +92,20 @@ html {
 	color: white;
 }
 
-.footer-logo {
-	height: 35px;
-	width: 35px;
-	background-color: white;
-}
-
 .footer-list {
-	font-size: 20px;
+	font-size: 16px;
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 
 .footer-link {
 	margin: 10px;
+	display: inline;
 }
 #footer-link1,
-#footer-link2 {
+#footer-link2,
+#footer-link3 {
 	color: white;
 }
