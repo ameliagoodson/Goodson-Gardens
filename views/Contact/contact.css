@@ -60,6 +60,8 @@ html {
 	padding: 10px;
 	font-family: "Quicksand", sans-serif;
 	font-size: 1.5rem;
+	font-weight: bold;
+	font-variant: small-caps;
 	color: var(--darkblue);
 	width: 100%;
 	text-align: center;
@@ -112,7 +114,9 @@ html {
 	color: var(--darkblue);
 	font-family: "Quicksand", sans-serif;
 	font-size: 1.5rem;
+	font-weight: bold;
 	text-align: center;
+	font-variant: small-caps;
 }
 .contact-details {
 	font-size: 1rem;
