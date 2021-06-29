@@ -16,6 +16,7 @@ html {
 	position: relative;
 	min-height: 100vh;
 }
+
 .navbar {
 	background-color: white;
 	border-bottom: var(--lightblue) 2px solid;
@@ -94,6 +95,8 @@ html {
 }
 .row {
 	width: 100%;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 .card-jumbotron {
 	max-width: 40rem;
@@ -172,4 +175,12 @@ html {
 #footer-link2,
 #footer-link3 {
 	color: white;
+}
+
+/* MEDIA QUERIES  */
+/* Extra small devices (phones, 500px and down) */
+@media only screen and (max-width: 500px) {
+	.row {
+		display: block;
+	}
 }
