@@ -66,10 +66,14 @@ html {
 	text-align: center;
 	color: white;
 }
-.row {
+
+.cols {
 	display: flex;
 	justify-content: center;
+	margin: 0px;
+	align-items: center;
 }
+
 .card-services {
 	border: none;
 	display: flex;
@@ -77,6 +81,7 @@ html {
 	align-items: center;
 	padding: 10px;
 	margin-bottom: 10px;
+	width: 80%;
 }
 .card-title {
 	font-family: "Quicksand", sans-serif;
@@ -139,9 +144,4 @@ html {
 #footer-link2,
 #footer-link3 {
 	color: white;
-}
-
-/* MEDIA QUERIES */
-
-@media screen {
 }

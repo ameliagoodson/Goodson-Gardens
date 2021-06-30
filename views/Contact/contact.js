@@ -2,7 +2,6 @@
 $(document).ready(function () {
   $(".btn-contact").click(function (event) {
     event.preventDefault();
-    console.log("clicking the button");
 
     var name = $(".name").val();
     var email = $(".email").val();
