@@ -66,6 +66,9 @@ html {
 	text-align: center;
 	color: white;
 }
+#services-row {
+	margin: 0px;
+}
 
 .cols {
 	display: flex;
