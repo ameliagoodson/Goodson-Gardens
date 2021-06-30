@@ -69,6 +69,12 @@ html {
 #services-row {
 	margin: 0px;
 }
+.row {
+	display: flex;
+	justify-content: center;
+	margin: 0px;
+	align-items: center;
+}
 
 .cols {
 	display: flex;
