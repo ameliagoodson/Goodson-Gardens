@@ -102,18 +102,17 @@ html {
 }
 
 /* Footer */
-.container-footer {
-	padding: 10px;
-}
-
 .footer {
 	padding-left: 10px;
 	background-color: #e50b5e;
-	bottom: 0;
+	bottom: 0px;
 	width: 100%;
 	height: fit-content;
 	display: flex;
 	flex-direction: column;
+}
+.row-footer {
+	width: 100%;
 }
 .footer-brand {
 	font-family: "Quicksand", sans-serif;
@@ -146,4 +145,11 @@ html {
 #footer-link2,
 #footer-link3 {
 	color: white;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 992px) {
+	.footer {
+		position: fixed;
+	}
 }

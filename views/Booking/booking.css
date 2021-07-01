@@ -69,7 +69,6 @@ html {
 .footer {
 	padding-left: 10px;
 	background-color: #e50b5e;
-	/* bottom: 0; */
 	width: 100%;
 	height: fit-content;
 	display: flex;
