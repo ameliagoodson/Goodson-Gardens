@@ -20,15 +20,6 @@ html {
 		),
 		url(../../assets/wallpaper-leaves3.jpg);
 }
-.page-container {
-	position: relative;
-	min-height: 100vh;
-}
-
-.content-wrap {
-	padding-bottom: 4rem;
-}
-
 /* Navigation bar */
 
 .navbar-brand {
@@ -62,31 +53,46 @@ html {
 	text-align: center;
 	color: white;
 }
-/* Carousel */
-.carousel {
-	margin: auto;
-	max-width: 50rem;
-	border: white 10px solid;
+
+/* CAROUSEL */
+.container-gallery {
+	margin-top: 30px;
 	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
 }
+
+.carousel-gallery {
+	border: 1px solid white;
+	max-height: 50vh;
+	max-width: 40vw;
+	overflow: hidden;
+}
+.images-gallery {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
 	width: 40px;
 	height: 40px;
 }
 /* Footer */
-.container-footer {
-	padding: 5px;
-}
-
 .footer {
 	padding-left: 10px;
 	background-color: #e50b5e;
 	bottom: 0;
 	width: 100%;
 	height: fit-content;
-	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	position: fixed;
+}
+.row-footer {
+	display: block;
 }
 .footer-brand {
 	font-family: "Quicksand", sans-serif;
@@ -119,4 +125,12 @@ html {
 #footer-link2,
 #footer-link3 {
 	color: white;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+	.carousel-gallery {
+		max-height: 50vh;
+		max-width: 90vw;
+	}
 }
