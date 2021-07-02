@@ -132,18 +132,17 @@ html {
 	margin-top: 20px;
 }
 /* Footer */
-.container-footer {
-	padding: 5px;
-}
-
 .footer {
 	padding-left: 10px;
 	background-color: #e50b5e;
 	bottom: 0;
 	width: 100%;
 	height: fit-content;
-	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.row-footer {
+	display: block;
 }
 .footer-brand {
 	font-family: "Quicksand", sans-serif;
