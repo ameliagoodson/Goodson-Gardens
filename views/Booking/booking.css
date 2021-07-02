@@ -22,7 +22,13 @@ html {
 .page-container {
 	position: relative;
 	min-height: 100vh;
+	min-width: 100vw;
 }
+#content-wrap {
+	padding-bottom: 6rem; /* Footer height */
+}
+
+/* Navigation Bar */
 .navbar {
 	background-color: white;
 	border-bottom: var(--lightblue) 2px solid;
@@ -56,24 +62,28 @@ html {
 	text-align: center;
 	color: white;
 }
+.container {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
 
 .calendly-inline-widget {
-	min-width: 320px;
-	height: 630px;
+	min-width: 50vw;
+	height: 60vh;
 }
 /* Footer */
-.container-footer {
-	padding: 5px;
-}
-
 .footer {
 	padding-left: 10px;
 	background-color: #e50b5e;
 	width: 100%;
-	height: fit-content;
-	display: flex;
-	flex-direction: column;
+	height: 6rem;
 	position: absolute;
+	text-align: center;
+	bottom: 0;
+}
+.row-footer {
+	display: block;
 }
 .footer-brand {
 	font-family: "Quicksand", sans-serif;
