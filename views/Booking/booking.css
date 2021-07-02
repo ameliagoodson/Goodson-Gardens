@@ -63,15 +63,15 @@ html {
 	color: white;
 }
 .container {
-	justify-content: center;
-	align-items: center;
-	display: flex;
+	margin-bottom: 30px;
+	padding-top: 0px;
 }
 
 .calendly-inline-widget {
-	min-width: 50vw;
-	height: 60vh;
+	min-width: 320px;
+	height: 750px;
 }
+
 /* Footer */
 .footer {
 	padding-left: 10px;
