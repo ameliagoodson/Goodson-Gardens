@@ -19,11 +19,17 @@ html {
 		),
 		url(../../assets/wallpaper-leaves3.jpg);
 }
-.page-container {
+#page-container {
 	position: relative;
 	min-height: 100vh;
+	min-width: 100vw;
 }
 
+#content-wrap {
+	padding-bottom: 6rem; /* Footer height */
+}
+
+/* Navigation Bar */
 .navbar-brand {
 	font-weight: bold;
 	margin-right: 5px;
@@ -51,9 +57,9 @@ html {
 .container {
 	min-width: 40%;
 	margin: auto;
-
 	display: block;
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .form-header {
 	margin-bottom: 0px;
@@ -101,7 +107,23 @@ html {
 	margin-bottom: 20px;
 	border: none;
 }
+.col-sm-12 {
+	margin-bottom: 30px;
+}
+.col-md-6 {
+	max-width: 40%;
+	margin: 10px;
+}
+.contact-row {
+	display: flex;
+	justify-content: center;
+}
+
 .contact-col {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.map-col {
 	background-color: white;
 	color: var(--darkblue);
 	height: 30rem;
@@ -135,19 +157,17 @@ html {
 	background-color: grey;
 }
 /* Footer */
-.container-footer {
-	padding: 5px;
-}
-
 .footer {
 	padding-left: 10px;
 	background-color: #e50b5e;
+	text-align: center;
+	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: fit-content;
-	display: flex;
-	flex-direction: column;
-	position: absolute;
+	height: 6rem;
+}
+.row-footer {
+	display: block;
 }
 .footer-brand {
 	font-family: "Quicksand", sans-serif;
@@ -181,4 +201,11 @@ html {
 #footer-link2,
 #footer-link3 {
 	color: white;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+	.col-md-6 {
+		max-width: 70vw;
+	}
 }
