@@ -13,12 +13,13 @@ body,
 html {
 	height: 100vh;
 	width: 100vw;
-	background-size: cover;
+	background-color: white;
+	/* background-size: cover;
 	background-image: linear-gradient(
 			rgba(69, 95, 84, 0.8),
 			rgba(69, 95, 84, 0.8)
 		),
-		url(../../assets/wallpaper-leaves3.jpg);
+		url(../../assets/wallpaper-leaves3.jpg); */
 }
 /* Navigation bar */
 
@@ -31,60 +32,46 @@ html {
 }
 .navbar {
 	background-color: white;
-	border-bottom: var(--lightblue) 2px solid;
 	padding: 0px 0px 0px 5px;
 }
 .logo {
-	height: 30px;
-	width: 30px;
+	height: 80px;
+	width: 120px;
 	margin-left: 10px;
 	margin-bottom: 5px;
 }
 .nav-link {
-	color: var(--darkblue) !important;
+	color: #e50b5e !important;
 	font-size: 0.8rem;
 }
-.heading-gallery {
-	font-size: 2rem;
-	font-family: "Quicksand", sans-serif;
-	font-weight: bold;
-	font-variant: small-caps;
-	margin: 20px;
-	text-align: center;
-	color: white;
+
+/* // MAIN GALLERY // */
+.col {
+	margin: 10px;
+}
+.img-nature {
+	height: 250px;
+	border-radius: 10px;
+}
+.img-nature-tall {
+	height: 300px;
+	border-radius: 10px;
+}
+.img-nature-wide {
+	width: 300px;
+	border-radius: 10px;
+}
+.label-nature {
+	font-size: 16px;
+	word-wrap: break-word;
+	font-style: italic;
+	color: #83123d;
 }
 
-/* CAROUSEL */
-.container-gallery {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	display: flex;
-	justify-content: center;
-}
-
-.carousel-gallery {
-	border: 1px solid white;
-	max-height: 50vh;
-	max-width: 40vw;
-	overflow: hidden;
-}
-.images-gallery {
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-	width: 40px;
-	height: 40px;
-}
 /* Footer */
 .footer {
 	padding-left: 10px;
 	background-color: #e50b5e;
-	bottom: 0;
 	width: 100%;
 	height: fit-content;
 	justify-content: center;

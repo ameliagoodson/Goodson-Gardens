@@ -4,40 +4,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
-    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
-    integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
-    crossorigin="anonymous"></script>
+
+  <!-- ---- BOOTSTRAP ---- -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&Red+Hat+Display&display=swap"
     rel="stylesheet">
 
-  <!-- My style sheet -->
+  <!-- My style sheets -->
+  <link rel="stylesheet" href="/views/Components/navbar.css">
+  <link rel="stylesheet" href="/views/Components/footer.css">
   <link rel="stylesheet" href="./styles.css" />
-  <title>Goodson Gardens</title>
+  <title>Goodson Gardens - Mark Goodson</title>
 </head>
 
 <body>
   <!-- Navigation Bar -->
   <div class="page-container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="./index.html">Goodson Gardens<img src="./assets/flowerlogo.svg"
-          alt="pink waratah flower logo" class="logo" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar">
+      <a class="nav-brand-link" href="./index.html">
+        <img src="./assets/logo/logo2.svg" alt="pink waratah flower logo" class="logo" />
+      </a>
+      <button class="btn-hamburger">
+        <img class="img-hamburger" src="/assets/hamburger-icon-pink.svg">
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-
+      <div class="navbar-collapse">
+        <ul class="navbar-list">
           <li class="nav-item">
             <a class="nav-link" href="./views/Services/services.html">Services</a>
           </li>
@@ -53,75 +47,177 @@
         </ul>
       </div>
     </nav>
-    <!-- End of Navigation Bar, start of Jumbotron -->
-    <div class="jumbotron">
-      <div class="jumbotron-text-container">
-        <div class="card-jumbotron">
-          <h1 id="home-title">Dreaming of a beautiful garden?</h1>
-          <h2 id="home-subtitle">We can make that happen</h2>
-          <a class="btn btn-home" href="./views/Services/services.html" role="button">Services</a>
+    <!-- START CAROUSEL - End of Navigation Bar-->
+    <!-- Call to Action (CTA) overlaying Carousel -->
+    <section class="cta-section">
+      <h1 class="cta-title">Gardening Services in Greater Sydney</h1>
+      <h5 class="cta-price">FLAT RATE $70 PH (+ materials)</h5>
+      <button class="cta-btn">Contact</button>
+    </section>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="assets/gallery/carousel/01-purple-macro.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/gallery/carousel/lastofthenernines.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/gallery/carousel/pink-flannel-flower2.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/gallery/carousel/orange-flower.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/gallery/carousel/purple2.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/gallery/carousel/toadflax.jpg" alt="Third slide">
         </div>
       </div>
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <!-- Start of content -->
-    <div class="container">
-      <div class="row">
-        <div class="card-home">
-          <h1 class="card-title">Garden creation and maintenance</h1>
-          <p class="card-text">
-            Often when unexperienced people attempt to work on the landscaping
-            of their garden, they will tend to realise its complexity over
-            time. Features may be overlooked, ideas may be lacking, time may
-            be scarce, and resource costs may be over-priced. However, why put
-            yourself through all that trouble, when there is a perfectly
-            simple solution – hire the Sydney landscaping experts who
-            certainly will implement all your ideas into practice.
-          </p>
 
-        </div>
-      </div>
+    <!-- Start of other content -->
+    <div class="container content-container">
       <div class="row">
-        <div class="col col1">
-          <div class="card-home" id="card-home1">
-            <h2 class="card-title">A title here</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
-              quod nulla odit labore porro ad, tempore, sit minima dignissimos
-              libero impedit recusandae reiciendis aut doloremque officiis
-              expedita deleniti asperiores cupiditate.</p>
-          </div>
-        </div>
-        <div class="col col2">
-          <div class="card-home" id="card-home2">
-            <h2 class="card-title">A title here</h2>
-            <p class="card-text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Provident itaque eos illo rerum impedit nesciunt nam explicabo
-              soluta totam corporis. Assumenda laborum iusto laudantium vitae
-              reprehenderit qui facere nisi neque!
+        <section class="services-section">
+          <h2 class="section-header">SERVICES</h2>
+          <section class="services-section">
+            <h3 class="services-heading">Garden maintenance and advice</h3>
+            <p class="services-text">Maintaining a garden can be a lot of work, when you take into account watering,
+              mulching,
+              fertilising, pruning, hedging,
+              planting and weeding. And sometimes you do all of those things but your succulents still rot or your
+              plants don't bear
+              fruit. <span class="link-highlight"><a>Mark Goodson</a></span> can take care of all of your garden
+              maintenance
+              needs and has a vast botanical knowledge
+              and knows precisely
+              what each plant requires to survive and thrive, from pest control and to the amount of sunlight and
+              soil composition.
             </p>
-          </div>
+          </section>
+          <section class="services-section">
+            <h3 class="services-subheading">What are your goals for your garden?
+            </h3>
+            <ul class="list-goals">
+              <li class="list-item">Should it be drought-resistant? Can you water the garden frequently? Or
+                should you install sprinklers?</li>
+              <li class="list-item">Is attracting local wildlife important to you?
+                <img class="img-services" src="/assets/gallery/nature/butterfly.jpg">
+              </li>
+              <li class="list-item">Do you want something colourful, where you grow your favourite flowers?</li>
+              <li class="list-item">Or just a soft lawn framed by a privacy hedge?</li>
+              <br>
+            </ul>
+            <p>You can do it all with Goodson Gardens. Leave it to the expert.</p>
+          </section>
+          <section class="services-section">
+            <h3 class="services-heading">Fruit and veggie gardens</h3>
+            <p class="services-text">
+              Look forward to having fresh vegetables and fruits straight from your garden. Mark has a produce garden at
+              his own place in the Blue Mountains, Sydney, and can create one for you too - and
+              make sure the possums and birds don't steal your tomatoes! </p>
+            <figure>
+              <img src="/assets/mg/possum-proofed-bok-choy.jpg" class="img-services">
+              <figcaption>Possum-proofed bok-choy</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/mg/tomatoes.jpg" class="img-services">
+              <figcaption>Kilograms of various tomatoes havested by Mark</figcaption>
+            </figure>
+            <p>Go to <span class="link-highlight"><a>GALLERY</a></span> to see more photos</p>
+          </section>
+          <section class="services-section">
+            <h3 class="services-heading">Turfing and lawn care</h3>
+            <p class="services-text">
+              The Australian climate can be tough on lawns and some types of turf are best-adapted to our hot summers.
+              The area for the turf needs to be measured, prepared, and then laid and maintained.
+              Mark can source, install and lay your turf and keep it looking good.
+            </p>
+            <figure>
+              <img src="/assets/buffalo-grass.jpg" class="img-services">
+              <figcaption>
+                Buffalo grass is one type that grows well in Sydney
+              </figcaption>
+            </figure>
+
+          </section>
+          <h3 class="services-heading">Chicken coops</h3>
+          <p class="services-text">Never want to run out of eggs?</p>
+          <figure>
+            <img src="/assets/egg.jpg" class="img-services">
+            <figcaption>
+              One chicken wasn't pulling its weight
+            </figcaption>
+          </figure>
+
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="section">
+        <div class="section-header">ABOUT</div>
+        <div class="section-body">
+          <ul class="list">
+            <li class="list-item">- Gardener and landscaper</li>
+            <li class="list-item">- Sydney-based</li>
+            <li class="list-item">- 30+ years in the industry</li>
+            <li class="list-item">- Encyclopediac knowledge of flora and fauna</li>
+          </ul>
+          <p class="section-text"> Will help you get your dream garden... or just keep the weeds away</p>
         </div>
       </div>
-      <!-- </div> -->
+      <p>Mark is also a National Parks of Australia (NPA) bushwalking leader. If you're interested in going a
+        bushwalk, check out the NPA program or get in touch with Mark</p>
     </div>
-    <!-- Start of footer -->
-    <footer class="footer">
-      <div class="row-footer">
-        <h1 class="footer-brand">Goodson Gardens
-        </h1>
-        <h2 class="footer-subtitle">0478 000 000<br />
-          <a href="mailto:emailaddress@gmail.com" class="footer-email">goodsongardens@gmail.com</a>
-        </h2>
-      </div>
-      <div class="row-footer">
-        <ul class="footer-list">
-          <li class="footer-link"><a id="footer-link1" href="./views/Services/services.html">Services</a></li>
-          <li class="footer-link"><a id="footer-link3" href="./views/Contact/contact.html"> Contact</a></li>
-          <li class="footer-link"><a id="footer-link2" href="./views/Booking/booking.html">Booking</a></li>
-        </ul>
-      </div>
-    </footer>
   </div>
+
+
+  <!-- Start of footer -->
+  <footer class="footer">
+    <div class="row-footer">
+      <h1 class="footer-brand">Goodson Gardens
+      </h1>
+      <h2 class="footer-subtitle">0478 000 000<br />
+        <a href="mailto:emailaddress@gmail.com" class="footer-email">goodsongardens@gmail.com</a>
+      </h2>
+    </div>
+    <div class="row-footer">
+      <ul class="footer-list">
+        <li class="footer-link"><a id="footer-link1" href="./views/Services/services.html">Services</a></li>
+        <li class="footer-link"><a id="footer-link3" href="./views/Contact/contact.html"> Contact</a></li>
+        <li class="footer-link"><a id="footer-link2" href="./views/Booking/booking.html">Booking</a></li>
+      </ul>
+    </div>
+  </footer>
+  </div>
+  <!-- Javascript file -->
+  <script src="/index.js"></script>
+  <!-- Bootstrap JS  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

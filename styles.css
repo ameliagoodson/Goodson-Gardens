@@ -1,185 +1,136 @@
+@font-face {
+	font-family: "Raleway";
+	src: url(/assets/Raleway-Medium.ttf);
+}
+@font-face {
+	font-family: "Raleway Bold Italic";
+	src: url(/assets/Raleway-BoldItalic.ttf);
+}
+@font-face {
+	font-family: "Raleway Bold";
+	src: url(/assets/Raleway-Bold.ttf);
+}
 :root {
-	--raspberry: #e50b5e;
-	--darkblue: rgb(34, 104, 130);
-	--mediumblue: rgb(43, 138, 173);
-	--lightblue: rgb(105, 185, 255);
-	--lightgrey: rgb(230, 232, 236);
+	--redcrayola: #f40b53;
+	--darkjunglegreen: #041a04;
+	--bitterlemon: #cfef1a;
 }
 
 body,
 html {
 	height: 100%;
 	width: 100%;
-	background-color: var(--lightgrey);
+	margin: 0;
+	padding: 0;
+	font-family: "Raleway";
+}
+.row {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+p,
+li,
+.services-text {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: "Raleway";
+}
+
+.link-highlight {
+	font-family: "Raleway Bold";
+	color: var(--redcrayola);
 }
 .page-container {
 	position: relative;
 	min-height: 100vh;
 }
 
-.navbar {
-	background-color: white;
-	border-bottom: var(--lightblue) 2px solid;
-	padding: 0px 0px 0px 5px;
+figcaption {
+	text-align: right;
+	font-size: 14px;
+	font-family: "Raleway";
 }
-.navbar-brand {
+
+.cta-section {
+	position: absolute;
+	top: 100px;
+	z-index: 1;
+	color: #041a04;
+	padding: 5px;
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.cta-title {
+	font-size: 24px;
+	font-family: "Raleway Bold";
+}
+.cta-price {
 	font-weight: bold;
-	margin-right: 5px;
-	font-family: "Quicksand", sans-serif;
-	font-size: 1rem;
-	color: var(--darkblue) !important;
+	font-size: 20px;
+	font-family: "Raleway Bold Italic";
+	background-color: var(--bitterlemon);
+	display: inline;
+	padding: 2px;
 }
-.logo {
-	height: 30px;
-	width: 30px;
-	margin-left: 10px;
+.cta-btn {
+	background-color: #f40b53;
+	border: none;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.9);
+	margin-top: 10px;
+}
+
+.content-container {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.section-header {
+	background-color: var(--bitterlemon);
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Raleway Bold";
+}
+.services-heading {
+	font-family: "Raleway Bold";
+	color: var(--darkjunglegreen);
+	font-size: 20px;
 	margin-bottom: 5px;
 }
-.nav-link {
-	color: var(--darkblue) !important;
-	font-size: 0.8rem;
+.services-subheading {
+	font-size: 18px;
+	color: var(--redcrayola);
 }
-.container {
+.services-section {
 	width: 100%;
-}
-.jumbotron-text-container {
-	width: fit-content;
-}
-.jumbotron {
-	background-size: auto, cover;
-	background-color: white;
-	background-image: linear-gradient(
-			rgba(5, 10, 12, 0.7),
-			rgba(31, 85, 105, 0.2)
-		),
-		url(./assets/hero1-australian-natives.jpg);
-	background-position: center;
-	height: 95vh;
-	border-bottom: var(--lightblue) 2px solid;
-	position: relative;
-	display: flex;
-	justify-content: center;
-}
-.jumbotron-text-container {
-	max-height: 400px;
-	max-width: 700px;
-	justify-content: center;
-	display: flex;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-#home-title {
-	font-size: 3rem;
-	padding-top: 20px;
-	font-variant: small-caps;
-}
-#home-subtitle {
-	font-size: 20px;
-	padding-bottom: 10px;
 }
 
-.btn-home {
-	background-color: var(--lightblue);
-	padding: 5px 10px 5px 10px;
-	font-size: 22px;
-	color: white;
-	margin-bottom: 20px;
-	border: none;
-	border-radius: 5px;
-	letter-spacing: 1px;
-	font-variant: small-caps;
-}
-.row {
+.img-services {
 	width: 100%;
-	margin-right: 0px;
-	margin-left: 0px;
-}
-.card-jumbotron {
-	max-width: 40rem;
-	border-radius: 0px;
-	max-height: 15rem;
-	text-align: center;
-	color: white;
-}
-.card-home {
-	background-color: white;
-	margin: 20px;
-	font-size: 16px;
-	padding: 20px;
 	border-radius: 5px;
+	margin: 5px;
 }
-#card-home1,
-#card-home2 {
-	margin-left: 5px;
-	margin-right: 5px;
-}
-.card-title {
-	text-align: center;
-	color: var(--mediumblue);
-	font-size: 2rem;
-	font-family: "Quicksand", sans-serif;
-	font-weight: bold;
-}
-.card-text {
-	color: black;
-}
-.column {
-	background-color: #fcf2d7;
-	margin-top: 20px;
-}
-/* Footer */
-.footer {
-	padding-left: 10px;
-	background-color: #e50b5e;
-	bottom: 0;
-	width: 100%;
-	height: fit-content;
-	justify-content: center;
-	text-align: center;
-}
-.row-footer {
-	display: block;
-}
-.footer-brand {
-	font-family: "Quicksand", sans-serif;
-	font-size: 1rem;
+
+.list-goals {
+	list-style-type: circle;
 	margin-bottom: 0px;
-	color: white;
+	padding-bottom: 0px;
 }
-.footer-subtitle {
-	font-size: 16px;
-	color: white;
-}
-.footer-email,
-.footer-email:hover {
-	color: white;
-}
-.footer-list {
-	font-size: 16px;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+.list-item {
 }
 
-.footer-link {
-	margin: 10px;
-	display: inline;
+/* MEDIA QUERIES */
+@media screen and (min-width: 480px) {
+	.carousel-inner {
+		width: 80%;
+	}
 }
-#footer-link1,
-#footer-link2,
-#footer-link3 {
-	color: white;
-}
-
-/* MEDIA QUERIES  */
-/* Extra small devices (phones, 500px and down) */
-@media only screen and (max-width: 500px) {
-	.row {
-		display: block;
+@media screen and (min-width: 768px) {
+	.carousel-inner {
+		width: 60%;
 	}
 }

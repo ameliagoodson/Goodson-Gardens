@@ -1,0 +1,39 @@
+@import url(/styles.css);
+.navbar {
+	background-color: white;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+.nav-brand-link {
+	text-decoration: none;
+	display: flex;
+}
+.nav-brand {
+	color: var(--redcrayola);
+	margin: 0;
+	font-family: "Franklin Gothic Medium", "Arial Narrow",
+		Arial, sans-serif;
+	font-size: 20px;
+}
+
+.logo {
+	height: 70px;
+	margin-bottom: 5px;
+}
+.nav-link {
+	color: var(--redcrayola);
+	font-size: 0.8rem;
+}
+.img-hamburger {
+	height: 40px;
+	width: 40px;
+}
+.btn-hamburger {
+	border: none;
+	background-color: white;
+}
+
+.navbar-collapse {
+	display: none;
+}

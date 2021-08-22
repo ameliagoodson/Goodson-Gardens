@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="hamburgericon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E61D55;}
+	.st1{fill:#F40B53;}
+</style>
+<path class="st0" d="M42-0.8"/>
+<g>
+	<g>
+		<ellipse class="st1" cx="19.3" cy="19.4" rx="10.3" ry="10.3"/>
+		<ellipse class="st1" cx="50" cy="19.4" rx="10.3" ry="10.3"/>
+		<ellipse class="st1" cx="80.7" cy="19.4" rx="10.3" ry="10.3"/>
+	</g>
+	<g>
+		<ellipse class="st1" cx="19.3" cy="50" rx="10.3" ry="10.3"/>
+		<ellipse class="st1" cx="50" cy="50" rx="10.3" ry="10.3"/>
+		<ellipse class="st1" cx="80.7" cy="50" rx="10.3" ry="10.3"/>
+	</g>
+	<g>
+		<ellipse class="st1" cx="19.3" cy="80.6" rx="10.3" ry="10.3"/>
+		<ellipse class="st1" cx="50" cy="80.6" rx="10.3" ry="10.3"/>
+		<ellipse class="st1" cx="80.7" cy="80.6" rx="10.3" ry="10.3"/>
+	</g>
+</g>
+</svg>
