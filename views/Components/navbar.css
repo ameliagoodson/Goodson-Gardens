@@ -1,4 +1,4 @@
-@import url(/styles.css);
+@import url(../../styles.css);
 .navbar {
 	background-color: white;
 	margin: 0;
@@ -8,13 +8,6 @@
 .nav-brand-link {
 	text-decoration: none;
 	display: flex;
-}
-.nav-brand {
-	color: var(--redcrayola);
-	margin: 0;
-	font-family: "Franklin Gothic Medium", "Arial Narrow",
-		Arial, sans-serif;
-	font-size: 20px;
 }
 
 .logo {

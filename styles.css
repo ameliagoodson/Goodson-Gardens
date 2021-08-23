@@ -1,14 +1,14 @@
 @font-face {
 	font-family: "Raleway";
-	src: url(/assets/Raleway-Medium.ttf);
+	src: url(./assets/Raleway-Medium.ttf);
 }
 @font-face {
 	font-family: "Raleway Bold Italic";
-	src: url(/assets/Raleway-BoldItalic.ttf);
+	src: url(./assets/Raleway-BoldItalic.ttf);
 }
 @font-face {
 	font-family: "Raleway Bold";
-	src: url(/assets/Raleway-Bold.ttf);
+	src: url(./assets/Raleway-Bold.ttf);
 }
 :root {
 	--redcrayola: #f40b53;
