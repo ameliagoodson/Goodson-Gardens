@@ -4,106 +4,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
-    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
-    integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
-    crossorigin="anonymous"></script>
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
-  <!-- My style sheet -->
-  <link rel="stylesheet" href="gallery.css" />
-  <title>Goodson Gardens</title>
+  <!-- My Style sheets -->
+  <link rel="stylesheet" href="/views/Components/navbar.css">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Goodson Gardens - Gallery</title>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="../../index.html"></a>
-    <img src="/assets/logo/logo.svg" alt="pink waratah flower logo" class="logo" />
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+  <nav class="navbar">
+    <a class="nav-brand-link" href="/index.html">
+      <img src="../../assets/logo/logo2.svg" alt="pink waratah flower logo" class="logo" />
+    </a>
+    <button class="btn-hamburger">
+      <img class="img-hamburger" src="../../assets/hamburger-icon-pink.svg" alt="navigation icon">
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    <div class="navbar-hidden hide">
+      <ul class="navbar-list">
         <li class="nav-item">
-          <a class="nav-link" href="../Services/services.html">Services</a>
+          <a class="nav-link" href="/index.html#services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../Gallery/gallery.html">Gallery</a>
+          <a class="nav-link" href="./views/Gallery/gallery.html">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../Contact/contact.html">Contact</a>
+          <a class="nav-link" href="/index.html#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../Booking/booking.html">Make a Booking</a>
+          <a class="nav-link" href="./views/Contact/contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./views/Booking/booking.html">Make a Booking</a>
         </li>
       </ul>
     </div>
   </nav>
   <!-- MAIN CONTENT -->
-  <div class="container">
-    <div class="row row1">
-      <div class="col">
-        <label class="label-nature" for="king-protea">
-          King protea</label>
-        <img class="img-nature-wide" src="/assets/gallery/natives/king-protea.jpg" id="king-protea">
+  <main class="content-container">
+    <section class="gallery-section">
+      <h2 class="section-header">GALLERY</h2>
+      <p>Want some inspiration? Take a look at some of the plants and gardens that Goodson Gardens have lovingly grown
+        and tended to, or viewed in the wild in Australia.
+      </p>
+      <div id="div-gallery" class="div-gallery">
+        <img src="/assets/gallery/hydrangea3.jpg" class="img-gallery" alt="light hydrangea flower">
+        <img src="/assets/gallery/hydrangea.jpg" class="img-gallery" alt="pink purple and blue hydrangea flowers">
+        <img src="/assets/gallery/hydrangea-bush2.jpg" class="img-gallery" alt="pink purple and blue hydrangea bush">
+        <img src="/assets/gallery/rose.jpg" class="img-gallery" alt="deep red rose">
+        <img src="/assets/gallery/gerbera.jpg" class="img-gallery" alt="gerbera flower purple-pink">
+        <img src="/assets/gallery/purple-tiny-flowers.jpg" class="img-gallery"
+          alt="small purple flowers surrounded by brown fallen leaves">
+        <img src="/assets/gallery/blue-entoloma.jpg" class="img-gallery" alt="blue entoloma fungi">
+        <img src="/assets/gallery/chorizema-cordatum.jpg" class="img-gallery" alt="chorizema cordatum">
+        <img src="/assets/gallery/butterfly-blue-scabiosa.jpg" class="img-gallery" alt="butterfly blue scabiosa">
+        <img src="/assets/gallery/poppy2.jpg" class="img-gallery" alt="light purple poppy">
+        <img src="/assets/gallery/poppy3.jpg" class="img-gallery" alt="light purple poppy">
+        <img src="/assets/gallery/pink-flannel-flower.jpg" class="img-gallery" alt="pink flannel flower">
+        <img src="/assets/gallery/pink-flannel-flower-spider.jpg" class="img-gallery"
+          alt="pink flannel flower with small spider on top">
+        <img src="/assets/gallery/erica-cinerea-pink-ice.jpg" class="img-gallery" alt="erica cinerea pink ice">
+        <img src="/assets/gallery/tradescantia-wandering jew.jpg" class="img-gallery" alt="tradescantia wandering jew">
+        <img src="/assets/gallery/calochilus-robertsonii-bearded-orchid.jpg" class="img-gallery" alt="bearded orchid">
+        <img src="/assets/gallery/orchid-spider-closeup.jpg" class="img-gallery" alt="spider orchid">
+        <img src="/assets/gallery/orchid-spider.jpg" class="img-gallery" alt="spider orchid">
+        <img src="/assets/gallery/orchid.jpg" class="img-gallery" alt="orchid">
+        <img src="/assets/gallery/leopard-orchid.jpg" class="img-gallery" alt="leopard orchid flower">
+        <img src="/assets/gallery/vanilla-orchid.jpg" class="img-gallery " alt="vanilla-orchid">
+        <img src="/assets/gallery/waratah3.jpg" class="img-gallery" alt="waratah red flower">
+        <img src="/assets/gallery/wattle-acacia-terminalis.jpg" class="img-gallery" alt="wattle-acacia terminalis">
+        <img src="/assets/gallery/lettuces-5wks.jpg" class="img-gallery" alt="lettuce five weeks after planting">
+        <img src="/assets/gallery/snow-peas.jpg" class="img-gallery" alt="snow-peas">
+        <img src="/assets/gallery/spinach-purplebroccoli-silverbeets.jpg"
+          alt="spinach, purple brocolli and silverbeets in garden" class="img-gallery ">
+        <img src="/assets/gallery/veggiegardenpart.jpg" class="img-gallery" alt="part of a vegetable garden">
+        <img src="/assets/gallery/chinesecabbage-andbokchoy.jpg" class="img-gallery">
+        <img src="/assets/gallery/waratah-close.jpg" class="img-gallery" alt="waratah red flower close up">
+        <img src="/assets/gallery/protea.jpg" class="img-gallery" alt="king protea">
       </div>
-      <div class="col">
-        <label class="label-nature">
-          Snow covered wattle in the Blue Mountains</label>
-        <img class="img-nature-tall" src="/assets/gallery/natives/wattle-snow.jpg">
-      </div>
-      <div class="col">
-        <label class="label-nature">
-          Dracophyllum secundum</label>
-        <img class="img-nature" src="/assets/gallery/natives/dracophyllum-secundum.jpg">
-      </div>
-      <div class="col">
-        <label class="label-nature">
-          Blechnum</label>
-        <img class="img-nature" src="/assets/gallery/natives/blechnum.jpg">
-      </div>
-      <div class="col">
-        <label class="label-nature">
-          "Snowflakes", Leucojum</label>
-        <img class="img-nature-tall" src="/assets/gallery/natives/snowflakes-leucojum.jpg">
-      </div>
-      <div class="col">
-        <label class="label-nature">
-          Banksia marginata</label>
-        <img class="img-nature-wide" src="/assets/gallery/natives/banksia-marginata.jpg">
-      </div>
-      <div class="col">
-        <label class="label-nature">
-          "Native sarsaparilla", Hardenbergia violacea </label>
-        <img class="img-nature-tall" src="/assets/gallery/natives/hardenbergia-violacea.jpg">
-      </div>
-      <div class="col">
-        <label class="label-nature">
-          "Red devil", Leucondendron salignum</label>
-        <img class="img-nature" src="/assets/gallery/natives/leucondendron-salignum-red-devil.jpg">
-      </div>
-      <div class="col">
-        <label class="label-nature">
-          "Potberg sugarbush", Protea aurea potbergensis</label>
-        <img class="img-nature-wide" src="/assets/gallery/natives/protea-sugarbush.jpg">
-      </div>
-      <div class="col">
-        <img class="img-nature" src="/assets/gallery/natives/banksia-ericifolia.jpg">
-        <label class="label-nature">
-          "Snowflakes", Leucojum</label>
-      </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <!-- Start of footer -->
   <footer class="footer">
@@ -122,7 +106,8 @@
       </ul>
     </div>
   </footer>
-
+  <script src="gallery.js"></script>
+  <script src="/index.js"></script>
 </body>
 
 </html>

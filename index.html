@@ -15,9 +15,21 @@
 
   <!-- My style sheets -->
   <link rel="stylesheet" href="./views/Components/navbar.css">
-  <link rel="stylesheet" href="./views/Components/footer.css">
   <link rel="stylesheet" href="./styles.css" />
   <title>Goodson Gardens - Mark Goodson</title>
+
+  <!-- Bootstrap JS  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"
+    defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
+    defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
+    defer></script>
+  <!-- My script -->
+  <script src="./index.js" defer></script>
 </head>
 
 <body>
@@ -28,15 +40,18 @@
         <img src="./assets/logo/logo2.svg" alt="pink waratah flower logo" class="logo" />
       </a>
       <button class="btn-hamburger">
-        <img class="img-hamburger" src="./assets/hamburger-icon-pink.svg">
+        <img class="img-hamburger" src="./assets/hamburger-icon-pink.svg" alt="navigation icon">
       </button>
-      <div class="navbar-collapse">
+      <div class="navbar-hidden hide">
         <ul class="navbar-list">
           <li class="nav-item">
-            <a class="nav-link" href="./views/Services/services.html">Services</a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./views/Gallery/gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./views/Contact/contact.html">Contact</a>
@@ -47,83 +62,98 @@
         </ul>
       </div>
     </nav>
-    <!-- START CAROUSEL - End of Navigation Bar-->
-    <!-- Call to Action (CTA) overlaying Carousel -->
     <section class="cta-section">
       <h1 class="cta-title">Gardening Services in Greater Sydney</h1>
-      <h5 class="cta-price">FLAT RATE $70 PH (+ materials)</h5>
+      <div class="price-div">
+        <h5 class="cta-price">FLAT RATE $70 PH (+ materials)</h5>
+      </div>
       <button class="cta-btn">Contact</button>
     </section>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="./assets/gallery/carousel/01-purple-macro.jpg" alt="purple flower close up">
-          <div class="carousel-caption">
-            <h5>purple flower caption here</h5>
+    <section class="carousel-section">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./assets/gallery/carousel/01-purple-macro.jpg"
+              alt="purple dahlia flower close up">
+            <div class="carousel-caption">
+              <h5>Dahlia</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/gallery/carousel/nerine.jpg" alt="pink flower, nerines, close up">
+            <div class="carousel-caption">
+              <h5>Nerines</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/gallery/carousel/orange-flower.jpg" alt="orange nerine flower">
+            <div class="carousel-caption">
+              <h5>Orange nerine</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/gallery/carousel/pink-flowers.jpg"
+              alt="small pink flowers - tree begonia">
+            <div class="carousel-caption">
+              <h5>Tree begonia</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/gallery/carousel/podolepis-hieracioides.jpg"
+              alt="light yellow, spindly flower - Podolepis hieracioides">
+            <div class="carousel-caption">
+              <h5>Podolepis hieracioides</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/gallery/carousel/purple2.jpg" alt="purple myrtle flower">
+            <div class="carousel-caption">
+              <h5>Purple myrtle</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/gallery/carousel/toadflax.jpg" alt="purple toadflax flower">
+            <div class="carousel-caption">
+              <h5>One of the many species of toadflax</h5>
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="./assets/gallery/carousel/nerines.jpg" alt="pink flower close up">
-          <div class="carousel-caption">
-            <h5>Last of the nerines</h5>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="./assets/gallery/carousel/pink-flannel-flower2.jpg" alt="pink flannel flower">
-          <div class="carousel-caption">
-            <h5>Pink flannel flower emerging after bushfires</h5>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="./assets/gallery/carousel/orange-flower.jpg" alt="orange flower">
-          <div class="carousel-caption">
-            <h5>Orange flower caption</h5>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="./assets/gallery/carousel/purple2.jpg" alt="purple flower">
-          <div class="carousel-caption">
-            <h5>Purple flower caption</h5>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="./assets/gallery/carousel/toadflax.jpg" alt="purple flower called toadflax">
-          <div class="carousel-caption">
-            <h5>One of the many species of toadflax</h5>
-          </div>
-        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <!-- Carousel controls -->
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+    </section>
+
     <!-- Start of other content -->
-    <div class="container content-container">
+    <div class="content-container">
       <div class="row">
-        <section class="services-section">
+        <section class="services-section" id="services">
           <h2 class="section-header">SERVICES</h2>
           <section class="services-section">
             <h3 class="services-heading">Garden maintenance and advice</h3>
-            <p class="services-text">Maintaining a garden can be a lot of work, when you take into account watering,
-              mulching,
-              fertilising, pruning, hedging,
-              planting and weeding. And sometimes you do all of those things but your succulents still rot or your
+            <p class="services-text">Maintaining a garden can be a lot of work, when you take into account <span
+                class="italics">watering,
+                mulching,
+                fertilising, pruning, hedging,
+                planting and weeding.</span> And sometimes you do all of those things but your succulents still rot or
+              your
               plants don't bear
-              fruit. <span class="link-highlight"><a>Mark Goodson</a></span> can take care of all of your garden
+              fruit. <a href="#about"><span class="highlight-pink">Mark Goodson</span></a> can take care of all of your
+              garden
               maintenance
               needs and has a vast botanical knowledge
               and knows precisely
@@ -142,11 +172,16 @@
               <li class="list-item">Do you want something colourful, where you grow your favourite flowers?</li>
               <li class="list-item">Or a soft lawn framed by a privacy hedge?</li>
             </ul>
+            <p>You can do it all with Goodson Gardens. Leave it to the expert.</p>
             <figure>
               <img class="img-services" src="./assets/gallery/nature/butterfly.jpg" alt="butterfly resting on flower">
-              <figcaption>Attract wildlife with the right species <br>Photo: Mark Goodson</figcaption>
+              <figcaption>Painted lady butterfly on helichrysum paper daisy<br>Photo: Mark Goodson</figcaption>
             </figure>
-            <p>You can do it all with Goodson Gardens. Leave it to the expert.</p>
+            <figure>
+              <img class="img-services" src="./assets/gallery/nature/spinebill-salvia.jpg"
+                alt="spinebill bird eating salvia">
+              <figcaption>Spinebill feeding on salvia<br>Photo: Mark Goodson</figcaption>
+            </figure>
           </section>
           <section class="services-section">
             <h3 class="services-heading">Fruit and veggie gardens</h3>
@@ -160,7 +195,7 @@
               <figcaption>Possum-proofed bok-choy<br>Photo: Mark Goodson</figcaption>
             </figure>
             <figure>
-              <img src="./assets/mg/tomatoes.jpg" class="img-services">
+              <img src="./assets/mg/tomatoes.jpg" class="img-services" alt="steel sink full of home grown tomatoes">
               <figcaption>Kilograms of various tomatoes<br>Photo: Mark Goodson</figcaption>
             </figure>
             <p>Go to <span class="link-highlight"><a>GALLERY</a></span> to see more photos</p>
@@ -182,12 +217,6 @@
           </section>
           <section class="services-section">
             <h3 class="services-heading">Chicken coops</h3>
-            <figure>
-              <img src="./assets/eggs.jpg" class="img-services" alt="Five eggs in a row, one very small">
-              <figcaption>
-                One chicken wasn't pulling its weight<br>Photo: Mark Goodson
-              </figcaption>
-            </figure>
             <p class="services-text">Never want to run out of eggs? In NSW, Australia, keeping up to 10 chooks in your
               backyard is generally legal but they have to be all hens. The applicable law depends on your state and
               Local Government Areas so check your council website.
@@ -198,7 +227,13 @@
               breeds, feed, roosting, eggs and more. Smaller chickens like bantams even make great pets for kids.
             </p>
             <figure>
-              <img src="./assets/black-chicken.jpg" class="img-services">
+              <img src="./assets/eggs.jpg" class="img-services" alt="Five eggs in a row, one very small">
+              <figcaption>
+                One chicken wasn't pulling its weight<br>Photo: Mark Goodson
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/black-chicken.jpg" class="img-services" alt="black chicken with puffy feathered head">
               <figcaption>Photo by <a
                   href="https://unsplash.com/@microfile?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">microfile.
                   org</a> on <a
@@ -208,60 +243,82 @@
           </section>
         </section>
         <section class="services-section">
-          <div class="row">
-            <div class="section">
-              <div class="section-header">ABOUT</div>
-              <div class="section-text">
-                <p>Mark Goodson of Goodson Gardens has worked as a gardener and landscaper over 30 years. Although based
-                  in
-                  the Blue Mountains, Mark travels all over Sydney to put that green thumb to good use. He has an
-                  encyclopediac knowledge of flora and fauna and you can be sure he'll have an answer when you ask 'How
-                  do I
-                  grow that?' or 'I can't understand why my plant is dying'. He knows what plants want and how to give
-                  it to
-                  them. He'll
-                  help you get your dream garden... or just keep the weeds away</p>
-              </div>
-            </div>
-            <p>Mark is also a National Parks of Australia (NPA) bushwalking leader. If you're interested in going a
-              bushwalk, check out the NPA program or get in touch with Mark</p>
+          <div class="section-header" id="about">ABOUT</div>
+          <div class="section-text">
+            <p>Mark Goodson of Goodson Gardens has worked as a gardener and landscaper for over 30 years. Although
+              based
+              in
+              the Blue Mountains, Mark travels all over Sydney to put his green thumb to good use. He has an
+              encyclopediac knowledge of flora and fauna and you can be sure he'll have an answer when you ask 'How
+              do I
+              grow that?' or 'I can't understand why my plant is dying'. He knows what plants want and how to give
+              it to
+              them.
+              <br>He'll
+              help you get your dream garden... or just keep the weeds away.
+            </p>
           </div>
+        </section>
+        <section class="services-section">
+          <div class="section-header">BUSHWALKING</div>
+          <p>Mark is also a National Parks of Australia (NPA) bushwalking leader. Bushwalking is a great way to see more
+            of nature, stay fit, and meet new friends.
+            If you're interested in going a
+            bushwalk, check out the
+            <a href="http://bushwalk.npansw.org.au/program-listing">NPA program</a>
+            or get in touch with Mark.
+
+          <figure>
+            <img class="img-services" src="./assets/markgoodsonwattle.jpg"
+              alt="Man walking up bough of thick fallen tree, surrounded by native wattle">
+            <figcaption>Photo: Mark Goodson</figcaption>
+          </figure>
+          <figure>
+            <img class="img-services" src="./assets/bushwalking2.jpg" alt="people climbing up large rock face">
+            <figcaption>Just a stroll, he said<br>Photo: Mark Goodson</figcaption>
+          </figure>
+          </p>
         </section>
       </div>
     </div>
-
+    <!-- Start of footer -->
+    <div class="footer-container">
+      <footer class="footer">
+        <div class="row-footer">
+          <h1 class="footer-brand">Goodson Gardens
+          </h1>
+          <h2 class="footer-subtitle">0478 000 000<br />
+            <a href="mailto:emailaddress@gmail.com" class="footer-email">goodsongardens@gmail.com</a>
+          </h2>
+          <ul class="footer-list">
+            <li class="footer-link"><a id="footer-link1" href="./views/Services/services.html">Services</a></li>
+            <li class="footer-link"><a id="footer-link3" href="./views/Contact/contact.html"> Contact</a></li>
+            <li class="footer-link"><a id="footer-link2" href="./views/Booking/booking.html">Booking</a></li>
+          </ul>
+        </div>
+        <section class="contact-section">
+          <h1 class="section-header">GET IN TOUCH</h1>
+          <form action="https://formspree.io/xeqrdgyw" method="POST" class="contact-form">
+            <label class="label-contact-form">First name
+              <input type="text" class="input-contact-form" name="firstname" placeholder="First name" />
+            </label>
+            <label class="label-contact-form">Last name
+              <input type="text" class="input-contact-form" name="lastname" placeholder="Last name" />
+            </label>
+            <label class="label-contact-form">Email address
+              <input type="email" class="input-contact-form" name="_replyto" placeholder="Your email" />
+            </label>
+            <label class="input-contact-form">What can we help you with?
+              <textarea class="input-message" name="message" placeholder="Ask a question"></textarea>
+            </label>
+            <button type="submit" class="button-contact">SEND</button>
+            <!-- Empty div where validation messages are displayed -->
+            <div class="status"></div>
+          </form>
+        </section>
+      </footer>
+    </div>
   </div>
-
-
-  <!-- Start of footer -->
-  <footer class="footer">
-    <div class="row-footer">
-      <h1 class="footer-brand">Goodson Gardens
-      </h1>
-      <h2 class="footer-subtitle">0478 000 000<br />
-        <a href="mailto:emailaddress@gmail.com" class="footer-email">goodsongardens@gmail.com</a>
-      </h2>
-    </div>
-    <div class="row-footer">
-      <ul class="footer-list">
-        <li class="footer-link"><a id="footer-link1" href="./views/Services/services.html">Services</a></li>
-        <li class="footer-link"><a id="footer-link3" href="./views/Contact/contact.html"> Contact</a></li>
-        <li class="footer-link"><a id="footer-link2" href="./views/Booking/booking.html">Booking</a></li>
-      </ul>
-    </div>
-  </footer>
-
-
-  <!-- Bootstrap JS  -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

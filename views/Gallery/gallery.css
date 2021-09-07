@@ -1,123 +1,60 @@
-:root {
-	--dark-olive-green: #506742;
-	--maximum-green: #c0e4a9;
-	--raspberry: #e50b5e;
-	--cornsilk: #fcf2d7;
-	--darkblue: rgb(34, 104, 130);
-	--mediumblue: rgb(43, 138, 173);
-	--lightblue: rgb(105, 185, 255);
-	--lightgrey: rgb(230, 232, 236);
-}
-
 body,
 html {
-	height: 100vh;
-	width: 100vw;
-	background-color: white;
-	/* background-size: cover;
-	background-image: linear-gradient(
-			rgba(69, 95, 84, 0.8),
-			rgba(69, 95, 84, 0.8)
-		),
-		url(../../assets/wallpaper-leaves3.jpg); */
-}
-/* Navigation bar */
-
-.navbar-brand {
-	font-weight: bold;
-	margin-right: 5px;
-	font-family: "Quicksand", sans-serif;
-	font-size: 1rem;
-	color: var(--darkblue) !important;
-}
-.navbar {
-	background-color: white;
-	padding: 0px 0px 0px 5px;
-}
-.logo {
-	height: 80px;
-	width: 120px;
-	margin-left: 10px;
-	margin-bottom: 5px;
-}
-.nav-link {
-	color: #e50b5e !important;
-	font-size: 0.8rem;
-}
-
-/* // MAIN GALLERY // */
-.col {
-	margin: 10px;
-}
-.img-nature {
-	height: 250px;
-	border-radius: 10px;
-}
-.img-nature-tall {
-	height: 300px;
-	border-radius: 10px;
-}
-.img-nature-wide {
-	width: 300px;
-	border-radius: 10px;
-}
-.label-nature {
-	font-size: 16px;
-	word-wrap: break-word;
-	font-style: italic;
-	color: #83123d;
-}
-
-/* Footer */
-.footer {
-	padding-left: 10px;
-	background-color: #e50b5e;
 	width: 100%;
-	height: fit-content;
-	justify-content: center;
+	height: 100%;
+}
+
+.content-container {
+	width: 95%;
+	margin: auto;
+}
+.div-gallery {
+	width: 100%;
+	margin: auto;
 	text-align: center;
+}
+.img-gallery {
+	object-fit: cover;
+	width: 100px;
+	height: 100px;
+	z-index: -1;
+	padding: 2px;
+}
+.img-gallery:hover {
+	cursor: pointer;
+}
+#modalbox {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
 	position: fixed;
+	top: 0;
+	z-index: 5;
+	display: none;
 }
-.row-footer {
-	display: block;
+#modalbox.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.footer-brand {
-	font-family: "Quicksand", sans-serif;
-	font-size: 1rem;
-	margin-bottom: 0px;
-	color: white;
-}
-.footer-subtitle {
-	font-size: 16px;
-	color: white;
-}
-.footer-email,
-.footer-email:hover {
-	color: white;
+.modalimg {
+	max-width: 90%;
+	max-height: 80%;
+	padding: 4px;
+	border: 5px solid white;
 }
 
-.footer-list {
-	font-size: 16px;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+@media screen and (min-width: 768px) {
+	.content-container {
+		width: 70%;
+	}
 }
-
-.footer-link {
-	margin: 10px;
-	display: inline;
-}
-#footer-link1,
-#footer-link2,
-#footer-link3 {
-	color: white;
-}
-
-/* MEDIA QUERIES */
-@media only screen and (max-width: 768px) {
-	.carousel-gallery {
-		max-height: 50vh;
-		max-width: 90vw;
+@media screen and (min-width: 992px) {
+	.content-container {
+		width: 60%;
+	}
+	.img-gallery {
+		width: 130px;
+		height: 130px;
 	}
 }

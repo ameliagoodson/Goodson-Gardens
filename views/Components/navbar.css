@@ -16,7 +16,12 @@
 }
 .nav-link {
 	color: var(--redcrayola);
-	font-size: 0.8rem;
+	display: block;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+}
+.nav-link:hover {
+	color: var(--darkjunglegreen);
 }
 .img-hamburger {
 	height: 40px;
@@ -25,8 +30,21 @@
 .btn-hamburger {
 	border: none;
 	background-color: white;
+	outline: none;
 }
-
-.navbar-collapse {
+.hide {
 	display: none;
+}
+.navbar-hidden {
+	z-index: 2;
+	background-color: white;
+	position: absolute;
+	width: 50%;
+	top: 90px;
+	right: 0px;
+}
+.navbar-list {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
 }
