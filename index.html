@@ -13,8 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&Red+Hat+Display&display=swap"
     rel="stylesheet">
 
-  <!-- My style sheets -->
-  <link rel="stylesheet" href="./views/Components/navbar.css">
+  <!-- Style sheets -->
   <link rel="stylesheet" href="./styles.css" />
   <title>Goodson Gardens - Mark Goodson</title>
 
@@ -282,26 +281,27 @@
     </main>
     <!-- Start of footer -->
     <div class="footer-container">
-      <footer class="footer">
+      <footer>
         <a class="nav-brand-link" href="./index.html">
           <img src="./assets/logo/logo-white.svg" alt="dark waratah flower logo" class="logo" />
         </a>
         <section class="contact-section" id="contact">
           <h1 class="section-header">GET IN TOUCH</h1>
           <form action="https://formspree.io/xeqrdgyw" method="POST" class="contact-form">
-            <label class="label-contact-form">First name
-              <input type="text" class="input-contact-form" name="firstname" placeholder="First name" />
+            <label class="label-contact-form">
+              <h5>Name</h5>
+              <input type="text" class="input-contact-form" name="name" placeholder="Name" />
             </label>
-            <label class="label-contact-form">Last name
-              <input type="text" class="input-contact-form" name="lastname" placeholder="Last name" />
+            <label class="label-contact-form">
+              <h5>Email</h5>
+              <input type="email" class="input-contact-form" name="_replyto" placeholder="Email address" />
             </label>
-            <label class="label-contact-form">Email address
-              <input type="email" class="input-contact-form" name="_replyto" placeholder="Your email" />
-            </label>
-            <label class="input-contact-form">What can we help you with?
+            <label class="label-message">
+              <h5>What can we help you with?</h5>
               <textarea class="input-message" name="message" placeholder="Ask a question"></textarea>
             </label>
             <button type="submit" class="button-contact">SEND</button>
+
             <!-- Empty div where validation messages are displayed -->
             <div class="status"></div>
           </form>
@@ -312,8 +312,12 @@
           <li><a href="/views/Booking/booking.html">Booking</a></li>
         </ul>
         <div class="footer-subcontent">
+          <div class="social-icons">
+            <img src="./assets/gallery/instagram-logo.png">
+            <img src="./assets/gallery/facebook-logo.png">
+          </div>
           <h2 class="footer-contact">0478 000 000<br />
-            <a href="mailto:emailaddress@gmail.com" class="footer-email">goodsongardens@gmail.com</a>
+            <a href="mailto:emailaddress@gmail.com">goodsongardens@gmail.com</a>
           </h2>
         </div>
       </footer>
@@ -322,4 +326,3 @@
 </body>
 
 </html>
-<div></div>
