@@ -4,7 +4,7 @@ html {
 	height: 100%;
 }
 
-.content-container {
+.main-container {
 	width: 95%;
 	margin: auto;
 }
@@ -45,12 +45,12 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-	.content-container {
+	.main-container {
 		width: 70%;
 	}
 }
 @media screen and (min-width: 992px) {
-	.content-container {
+	.main-container {
 		width: 60%;
 	}
 	.img-gallery {
