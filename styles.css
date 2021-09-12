@@ -90,10 +90,11 @@ html {
 	min-height: 100vh;
 	width: 100%;
 }
-.main-container {
+.content-container {
 	width: 90%;
 	margin: auto;
 }
+
 .services-section {
 	width: 100%;
 	margin-top: 10px;
@@ -125,23 +126,25 @@ figcaption {
 
 .cta-section {
 	position: absolute;
+	max-width: fit-content;
 	top: 100px;
 	z-index: 1;
 	color: #041a04;
-	padding: 5px;
+	padding: 15px;
 	margin: auto;
 	background-color: rgba(255, 255, 255, 0.5);
 }
 .cta-title {
-	font-size: 24px;
+	font-size: 22px;
 	font-family: "Raleway Bold";
 }
 .price-div {
 	background-color: var(--bitterlemon);
-	max-width: 350px;
+	max-width: 200px;
 	padding: 5px;
-	margin: 5px;
+	text-align: left;
 	transform: skewX(342deg);
+	margin: 10px;
 }
 .cta-price {
 	font-weight: bold;
@@ -159,7 +162,8 @@ figcaption {
 	padding: 5px 10px;
 	font-size: 20px;
 }
-.section-header {
+.section-header,
+.contact-header {
 	background-color: var(--bitterlemon);
 	font-size: 20px;
 	padding: 5px;
@@ -322,18 +326,67 @@ input {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 480px) {
-	.main-container {
+	.content-container {
 		width: 80%;
+		margin: auto;
 	}
 	.contact-section {
 		width: 60%;
 	}
 }
+@media screen and (max-width: 768px) {
+	.navbar-desktop {
+		display: none;
+	}
+}
+
 @media screen and (min-width: 768px) {
-	.main-container {
+	.content-container {
 		width: 60%;
 	}
 	.contact-section {
 		width: 40%;
+	}
+	.img-div {
+		width: 100%;
+		display: flex;
+	}
+	.img-div figure {
+		width: 45%;
+		margin: auto;
+	}
+
+	.btn-hamburger {
+		display: none;
+	}
+	.navbar-list {
+		display: flex;
+	}
+	.img-services {
+		max-height: 400px;
+		object-fit: cover;
+	}
+	.section-header {
+		width: 350px;
+		margin: 20px auto;
+	}
+	.contact-header {
+		width: 200px;
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.content-container {
+		margin: auto;
+	}
+	.contact-section {
+		width: 30%;
+	}
+	.cta-section {
+		top: 200px;
+	}
+	.carousel-section {
+		width: 100%;
 	}
 }
