@@ -16,16 +16,12 @@ images.forEach(img => {
         var caption = document.createTextNode(img.alt)
         modalCaption.className = 'modalcaption'
         modalCaption.appendChild(caption)
-        console.log(modalCaption)
-
-        
 
         while (modalbox.firstChild) {
             modalbox.removeChild(modalbox.firstChild)
         }
-        modalbox.appendChild(modalCaption)
         modalbox.appendChild(modalImg)
-
+        modalbox.appendChild(modalCaption)
     })
 });
 

@@ -41,7 +41,7 @@ html {
 	max-height: 80%;
 	padding: 4px;
 	border: 5px solid white;
-	position: absolute;
+	position: relative;
 }
 .modalcaption {
 	color: var(--darkjunglegreen);
@@ -50,8 +50,8 @@ html {
 	display: block;
 	background: rgba(255, 255, 255, 0.5);
 	padding: 5px 10px;
-	position: relative;
-	top: 0px;
+	position: absolute;
+	bottom: 200px;
 }
 @media screen and (min-width: 768px) {
 	.main-container {
