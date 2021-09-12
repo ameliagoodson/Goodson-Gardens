@@ -6,7 +6,6 @@ var images = document.querySelectorAll('.img-gallery')
 
 images.forEach(img => {
     img.addEventListener('click', function () {
-        console.log('test')
         modalbox.className = 'active'
         
         var modalImg = document.createElement('img') 

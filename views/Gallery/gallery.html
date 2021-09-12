@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- My Style sheets -->
-  <link rel="stylesheet" href="gallery.css">
-  <link rel="stylesheet" href="../../styles.css">
   <title>Goodson Gardens - Gallery</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="gallery.css">
+
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -35,10 +37,15 @@
           <a class="nav-link" href="/index.html#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./views/Contact/contact.html">Contact</a>
+          <a class="nav-link" href="/index.html#contact">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./views/Booking/booking.html">Make a Booking</a>
+          <!-- Calendly link widget begin -->
+          <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+          <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+          <a href="" class="nav-link"
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ameliagoodson'});return false;">Book</a>
+          <!-- Calendly link widget end -->
         </li>
       </ul>
     </div>
@@ -91,23 +98,72 @@
     </section>
   </main>
 
+
   <!-- Start of footer -->
-  <footer class="footer">
-    <div class="row-footer">
-      <h1 class="footer-brand">Goodson Gardens
-      </h1>
-      <h2 class="footer-contact">0478 000 000<br />
-        <a href="mailto:emailaddress@gmail.com" class="footer-email">goodsongardens@gmail.com</a>
-      </h2>
-    </div>
-    <div class="row-footer">
+  <div class="footer-container">
+    <footer>
+      <a class="nav-brand-link" href="/index.html">
+        <img src="../../assets/logo/logo-white.svg" alt="white waratah flower logo" class="logo" />
+      </a>
+      <section class="contact-section" id="contact">
+        <h1 class="section-header">GET IN TOUCH</h1>
+        <form action="https://formspree.io/xeqrdgyw" method="POST" class="contact-form">
+          <label for="name">
+            Name
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </label>
+          <label for="email">
+            Email
+            <input type="email" name="_replyto" id="email" placeholder="Email address" />
+          </label>
+          <div class="message-div">
+            <label for="message">
+              What can we help you with?
+            </label>
+            <textarea name="message" id="message" placeholder="Ask a question"></textarea>
+          </div>
+          <button type="submit" class="button-contact">SEND</button>
+        </form>
+      </section>
       <ul class="footer-links">
-        <li class="footer-link"><a id="footer-link3" href="../Services/services.html">Services</a></li>
-        <li class="footer-link"><a id="footer-link1" href="../Contact/contact.html">Contact</a></li>
-        <li class="footer-link"><a id="footer-link2" href="../Booking/booking.html"> Booking</a></li>
+        <li><a href="/index.html#services">Services</a></li>
+        <li><a href="/views/Gallery/gallery.html"> Gallery</a></li>
+        <li>
+          <!-- Calendly link widget begin -->
+          <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+          <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+          <a href=""
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ameliagoodson'});return false;">Book</a>
+          <!-- Calendly link widget end -->
+        </li>
       </ul>
-    </div>
-  </footer>
+      <section class="footer-subcontent">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/mark.natureboy6">
+            <img src="/assets/gallery/facebook-logo.png">
+          </a>
+          <a href="#">
+            <img src="/assets/gallery/instagram-logo.png">
+          </a>
+        </div>
+        <div class="footer-contact">
+          <div>
+            <img src="/assets/icon-location.png">
+            <p>Sydney, Australia</p>
+          </div>
+          <div>
+            <img src="/assets/icon-phone.png">
+            <p>0478 000 000</p>
+          </div>
+          <div>
+            <img src="/assets/icon-email.png">
+            <a href="mailto:emailaddress@gmail.com">goodsongardens@gmail.com</a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <!-- End of footer -->
   <script src="gallery.js"></script>
   <script src="../../index.js"></script>
 </body>

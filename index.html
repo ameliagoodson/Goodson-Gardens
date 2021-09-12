@@ -9,10 +9,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&Red+Hat+Display&display=swap"
-    rel="stylesheet">
-
   <!-- Style sheets -->
   <link rel="stylesheet" href="./styles.css" />
   <title>Goodson Gardens - Mark Goodson</title>
@@ -53,10 +49,15 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./views/Contact/contact.html">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./views/Booking/booking.html">Make a Booking</a>
+            <!-- Calendly link widget begin -->
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+            <a href="" class="nav-link"
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ameliagoodson'});return false;">Book</a>
+            <!-- Calendly link widget end -->
           </li>
         </ul>
       </div>
@@ -125,21 +126,12 @@
             </div>
           </div>
         </div>
-        <!-- Carousel controls -->
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </section>
 
     <!-- MAIN CONTENT -->
     <main class="main-container">
-      <section class="services-section" id="services">
+      <div class="services-section" id="services">
         <h2 class="section-header">SERVICES</h2>
         <section class="services-section">
           <h3 class="services-heading">Garden maintenance and advice</h3>
@@ -171,10 +163,6 @@
             <li class="list-item">Or a soft lawn framed by a privacy hedge?</li>
           </ul>
           <p>You can do it all with Goodson Gardens. Leave it to the expert.</p>
-          <!-- <figure>
-              <img class="img-services" src="./assets/gallery/nature/butterfly.jpg" alt="butterfly resting on flower">
-              <figcaption>Painted lady butterfly on helichrysum paper daisy<br>Photo: Mark Goodson</figcaption>
-            </figure> -->
           <figure>
             <img class="img-services" src="./assets/gallery/spinebill-salvia.jpg" alt="spinebill bird eating salvia">
             <figcaption>Spinebill feeding on salvia<br>Photo: Mark Goodson</figcaption>
@@ -239,89 +227,112 @@
             </figcaption>
           </figure>
         </section>
-      </section>
-      <section class="services-section">
-        <div class="section-header" id="about">ABOUT</div>
-        <div class="section-text">
-          <p>Mark Goodson of Goodson Gardens has worked as a gardener and landscaper for over 30 years. Although
-            based
-            in
-            the Blue Mountains, Mark travels all over Sydney to put his green thumb to good use. He has an
-            encyclopediac knowledge of flora and fauna and you can be sure he'll have an answer when you ask 'How
-            do I
-            grow that?' or 'I can't understand why my plant is dying'. He knows what plants want and how to give
-            it to
-            them.
-            <br>He'll
-            help you get your dream garden... or just keep the weeds away.
+        <section class="services-section">
+          <div class="section-header" id="about">ABOUT</div>
+          <div class="section-text">
+            <p>Mark Goodson of Goodson Gardens has worked as a gardener and landscaper for over 30 years. Although
+              based
+              in
+              the Blue Mountains, Mark travels all over Sydney to put his green thumb to good use. He has an
+              encyclopediac knowledge of flora and fauna and you can be sure he'll have an answer when you ask 'How
+              do I
+              grow that?' or 'I can't understand why my plant is dying'. He knows what plants want and how to give
+              it to
+              them.
+              <br>He'll
+              help you get your dream garden... or just keep the weeds away.
+            </p>
+          </div>
+        </section>
+        <section class="services-section">
+          <div class="section-header">BUSHWALKING</div>
+          <p>Mark is also a National Parks of Australia (NPA) bushwalking leader. Bushwalking is a great way to see more
+            of nature, stay fit, and meet new friends.
+            If you're interested in going a
+            bushwalk, check out the
+            <span>
+              <a href="http://bushwalk.npansw.org.au/program-listing">NPA program</a>
+              or get in touch with Mark.
+            </span>
+          <figure>
+            <img class="img-services" src="./assets/markgoodsonwattle.jpg"
+              alt="Man walking up bough of thick fallen tree, surrounded by native wattle">
+            <figcaption>Photo: Mark Goodson</figcaption>
+          </figure>
+          <figure>
+            <img class="img-services" src="./assets/bushwalking2.jpg" alt="people climbing up large rock face">
+            <figcaption>Just a stroll, he said<br>Photo: Mark Goodson</figcaption>
+          </figure>
           </p>
-        </div>
-      </section>
-      <section class="services-section">
-        <div class="section-header">BUSHWALKING</div>
-        <p>Mark is also a National Parks of Australia (NPA) bushwalking leader. Bushwalking is a great way to see more
-          of nature, stay fit, and meet new friends.
-          If you're interested in going a
-          bushwalk, check out the
-          <span>
-            <a href="http://bushwalk.npansw.org.au/program-listing">NPA program</a>
-            or get in touch with Mark.
-          </span>
-        <figure>
-          <img class="img-services" src="./assets/markgoodsonwattle.jpg"
-            alt="Man walking up bough of thick fallen tree, surrounded by native wattle">
-          <figcaption>Photo: Mark Goodson</figcaption>
-        </figure>
-        <figure>
-          <img class="img-services" src="./assets/bushwalking2.jpg" alt="people climbing up large rock face">
-          <figcaption>Just a stroll, he said<br>Photo: Mark Goodson</figcaption>
-        </figure>
-        </p>
-      </section>
+        </section>
+      </div>
     </main>
     <!-- Start of footer -->
     <div class="footer-container">
       <footer>
         <a class="nav-brand-link" href="./index.html">
-          <img src="./assets/logo/logo-white.svg" alt="dark waratah flower logo" class="logo" />
+          <img src="./assets/logo/logo-white.svg" alt="white waratah flower logo" class="logo" />
         </a>
         <section class="contact-section" id="contact">
           <h1 class="section-header">GET IN TOUCH</h1>
           <form action="https://formspree.io/xeqrdgyw" method="POST" class="contact-form">
-            <label class="label-contact-form">
-              <h5>Name</h5>
-              <input type="text" class="input-contact-form" name="name" placeholder="Name" />
+            <label for="name">
+              Name
+              <input type="text" name="name" id="name" placeholder="Name" />
             </label>
-            <label class="label-contact-form">
-              <h5>Email</h5>
-              <input type="email" class="input-contact-form" name="_replyto" placeholder="Email address" />
+            <label for="email">
+              Email
+              <input type="email" name="_replyto" id="email" placeholder="Email address" />
             </label>
-            <label class="label-message">
-              <h5>What can we help you with?</h5>
-              <textarea class="input-message" name="message" placeholder="Ask a question"></textarea>
-            </label>
+            <div class="message-div">
+              <label for="message">
+                What can we help you with?
+              </label>
+              <textarea name="message" id="message" placeholder="Ask a question"></textarea>
+            </div>
             <button type="submit" class="button-contact">SEND</button>
-
-            <!-- Empty div where validation messages are displayed -->
-            <div class="status"></div>
           </form>
         </section>
         <ul class="footer-links">
           <li><a href="#services">Services</a></li>
           <li><a href="/views/Gallery/gallery.html"> Gallery</a></li>
-          <li><a href="/views/Booking/booking.html">Booking</a></li>
+          <li>
+            <!-- Calendly link widget begin -->
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+            <a href=""
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ameliagoodson'});return false;">Book</a>
+            <!-- Calendly link widget end -->
+          </li>
         </ul>
-        <div class="footer-subcontent">
+        <section class="footer-subcontent">
           <div class="social-icons">
-            <img src="./assets/gallery/instagram-logo.png">
-            <img src="./assets/gallery/facebook-logo.png">
+            <a href="https://www.facebook.com/mark.natureboy6">
+              <img src="./assets/gallery/facebook-logo.png">
+            </a>
+            <a href="#">
+              <img src="./assets/gallery/instagram-logo.png">
+            </a>
+
           </div>
-          <h2 class="footer-contact">0478 000 000<br />
-            <a href="mailto:emailaddress@gmail.com">goodsongardens@gmail.com</a>
-          </h2>
-        </div>
+          <div class="footer-contact">
+            <div>
+              <img src="/assets/icon-location.png">
+              <p>Sydney, Australia</p>
+            </div>
+            <div>
+              <img src="/assets/icon-phone.png">
+              <p>0478 000 000</p>
+            </div>
+            <div>
+              <img src="/assets/icon-email.png">
+              <a href="mailto:emailaddress@gmail.com">goodsongardens@gmail.com</a>
+            </div>
+          </div>
+        </section>
       </footer>
     </div>
+    <!-- End of footer -->
   </div>
 </body>
 
