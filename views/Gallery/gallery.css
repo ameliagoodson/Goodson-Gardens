@@ -41,8 +41,18 @@ html {
 	max-height: 80%;
 	padding: 4px;
 	border: 5px solid white;
+	position: absolute;
 }
-
+.modalcaption {
+	color: var(--darkjunglegreen);
+	z-index: 999;
+	font-size: 20px;
+	display: block;
+	background: rgba(255, 255, 255, 0.5);
+	padding: 5px 10px;
+	position: relative;
+	top: 0px;
+}
 @media screen and (min-width: 768px) {
 	.main-container {
 		width: 70%;

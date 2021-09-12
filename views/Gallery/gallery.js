@@ -11,10 +11,21 @@ images.forEach(img => {
         var modalImg = document.createElement('img') 
         modalImg.className = 'modalimg'
         modalImg.src = img.src
+
+        var modalCaption = document.createElement('P')
+        var caption = document.createTextNode(img.alt)
+        modalCaption.className = 'modalcaption'
+        modalCaption.appendChild(caption)
+        console.log(modalCaption)
+
+        
+
         while (modalbox.firstChild) {
             modalbox.removeChild(modalbox.firstChild)
         }
+        modalbox.appendChild(modalCaption)
         modalbox.appendChild(modalImg)
+
     })
 });
 
