@@ -87,10 +87,7 @@ html {
 }
 
 /* MAIN CONTENT */
-.page-container {
-	min-height: 100vh;
-	width: 100%;
-}
+
 .content-container {
 	width: 90%;
 	margin: auto;
@@ -100,9 +97,7 @@ html {
 	width: 100%;
 	margin-top: 10px;
 }
-.carousel-section {
-	width: 100%;
-}
+
 p,
 li,
 .services-text {
@@ -125,7 +120,13 @@ figcaption {
 	font-family: "Raleway";
 }
 
-.cta-section {
+/* // Jumbotron // */
+.jumbotron,
+.jumbotron-img {
+	width: 100%;
+}
+
+.cta-div {
 	position: absolute;
 	max-width: fit-content;
 	top: 100px;
@@ -136,9 +137,12 @@ figcaption {
 	background-color: rgba(255, 255, 255, 0.5);
 }
 .cta-title {
-	font-size: 22px;
-	color: white;
+	font-size: 37px;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: var(--darkjunglegreen);
 	font-family: "Raleway";
+	margin: 5px;
+	padding: 10px;
 }
 .price-div {
 	background-color: var(--bitterlemon);
@@ -164,6 +168,8 @@ figcaption {
 	padding: 5px 10px;
 	font-size: 20px;
 }
+/* // end Jumbotron // */
+
 .section-header,
 .contact-header {
 	background-color: var(--bitterlemon);
@@ -205,7 +211,6 @@ footer {
 	text-align: center;
 	width: 100%;
 	margin: 0px;
-	padding: 10px;
 }
 .row-footer {
 	display: block;
@@ -219,6 +224,9 @@ footer {
 	width: 38px;
 	height: 38px;
 	margin: 5px;
+}
+.footer-contact {
+	padding: 5px;
 }
 .footer-contact div {
 	text-align: left;
@@ -329,10 +337,6 @@ input {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 480px) {
-	.content-container {
-		width: 80%;
-		margin: auto;
-	}
 	.contact-section {
 		width: 60%;
 	}
@@ -344,8 +348,9 @@ input {
 }
 
 @media screen and (min-width: 768px) {
-	.content-container {
-		width: 60%;
+	.page-container {
+		width: 80%;
+		padding: 0em 2em;
 	}
 	.contact-section {
 		width: 40%;
@@ -369,34 +374,39 @@ input {
 		max-height: 400px;
 		object-fit: cover;
 	}
-	.section-header {
-		width: 350px;
-		margin: 20px auto;
-	}
+
 	.contact-header {
 		width: 200px;
 		margin: auto;
 	}
+	.jumbotron-img {
+		max-height: 50vh;
+		object-fit: cover;
+	}
 }
-
-@media screen and (min-width: 1200px) {
-	.content-container {
+@media screen and (min-width: 992px) {
+	.page-container {
+		width: 70%;
+		padding: 0em 3em;
 		margin: auto;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.page-container {
+		padding: 0em 4em;
 	}
 	.contact-section {
 		width: 30%;
 	}
-	.cta-section {
+	.cta-div {
 		width: 500px;
 		max-width: none;
 	}
 	.cta-title {
 		font-size: 46px;
-		color: white;
 	}
-	.carousel-item {
-		width: 800px;
-		height: 500px;
-		overflow: hidden;
+	.jumbotron-img {
+		max-height: 50vh;
+		object-fit: cover;
 	}
 }
