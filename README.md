@@ -10,6 +10,7 @@ https://ameliagoodson.github.io/Goodson-Gardens/
 * Form validation with jQuery
 * Modal or 'lightbox' window in gallery coded in vanilla JavaScript
 * Fully responsive thanks to media queries and use of relative measurements where possible
+* Toggle hamburger menu for mobile and full navigation menu for larger devices
 * Designed Goodson Gardens logo in Adobe Illustrator
 * Booking and contact functionality made possible with embedded Calendly and Formspree links
 
