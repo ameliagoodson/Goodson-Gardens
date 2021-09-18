@@ -87,7 +87,9 @@ html {
 }
 
 /* MAIN CONTENT */
-
+.page-container {
+	margin: auto;
+}
 .content-container {
 	width: 90%;
 	margin: auto;
@@ -125,6 +127,10 @@ figcaption {
 .jumbotron-img {
 	width: 100%;
 }
+.jumbotron-img {
+	max-height: 40vh;
+	object-fit: cover;
+}
 
 .cta-div {
 	position: absolute;
@@ -132,12 +138,11 @@ figcaption {
 	top: 100px;
 	z-index: 1;
 	color: #041a04;
-	padding: 15px;
-	margin: auto;
+	padding: 5px;
 	background-color: rgba(255, 255, 255, 0.5);
 }
 .cta-title {
-	font-size: 37px;
+	font-size: 1.2rem;
 	background-color: rgba(255, 255, 255, 0.5);
 	color: var(--darkjunglegreen);
 	font-family: "Raleway";
@@ -151,6 +156,7 @@ figcaption {
 	text-align: left;
 	transform: skewX(342deg);
 	margin: 10px;
+	display: inline-block;
 }
 .cta-price {
 	font-weight: bold;
@@ -336,9 +342,21 @@ input {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 479px) {
+	.navbar {
+		padding: 0px;
+	}
+}
+
 @media screen and (min-width: 480px) {
 	.contact-section {
 		width: 60%;
+	}
+	.cta-title {
+		font-size: 1.5rem;
+	}
+	.cta-div {
+		padding: 7px;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -347,7 +365,10 @@ input {
 	}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
+	.cta-title {
+		font-size: 2rem;
+	}
 	.page-container {
 		width: 80%;
 		padding: 0em 2em;
@@ -364,7 +385,8 @@ input {
 		margin: auto;
 	}
 
-	.btn-hamburger {
+	.btn-hamburger,
+	.navbar-hidden {
 		display: none;
 	}
 	.navbar-list {
@@ -379,16 +401,16 @@ input {
 		width: 200px;
 		margin: auto;
 	}
-	.jumbotron-img {
-		max-height: 50vh;
-		object-fit: cover;
-	}
 }
 @media screen and (min-width: 992px) {
 	.page-container {
 		width: 70%;
 		padding: 0em 3em;
 		margin: auto;
+	}
+	.jumbotron-img {
+		max-height: 35vh;
+		object-fit: cover;
 	}
 }
 @media screen and (min-width: 1200px) {
@@ -399,14 +421,10 @@ input {
 		width: 30%;
 	}
 	.cta-div {
-		width: 500px;
+		width: fit-content;
 		max-width: none;
 	}
 	.cta-title {
-		font-size: 46px;
-	}
-	.jumbotron-img {
-		max-height: 50vh;
-		object-fit: cover;
+		font-size: 2.5rem;
 	}
 }
