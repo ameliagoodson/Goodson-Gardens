@@ -14,4 +14,5 @@ https://ameliagoodson.github.io/Goodson-Gardens/
 * Booking and contact functionality made possible with embedded Calendly and Formspree links
 
 # Preview
-![Goodson-Gardens_(iPhone 6_7_8 Plus)-w-frame](https://user-images.githubusercontent.com/60428536/133910795-1df6ef47-1c57-4e51-9861-1d8d92ba7607.png)
+![Goodson-Gardens_(iPhone 6_7_8 Plus)-w-framesmall](https://user-images.githubusercontent.com/60428536/133910870-828d6758-f948-4c04-977b-36fa94dd0041.png)
+
