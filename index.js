@@ -1,13 +1,14 @@
-const button = document.querySelector('.btn-hamburger')
-const navmenu = document.querySelector('.navbar-hidden')
+// const button = document.querySelector('.btn-hamburger')
+const button = $('.btn-hamburger')
+const navmenu = $('.navbar-hidden')
 
-button.addEventListener('click', () => {
-    navmenu.classList.toggle('hide')
+button.click(() =>{
+  navmenu.toggle()
 })
 
 // Contact form validation
 $(document).ready(function () {
-  $(".btn-contact").click(function (event) {
+  $(".btn-contact").click((event) => {
     event.preventDefault();
 
     var name = $(".name").val();
