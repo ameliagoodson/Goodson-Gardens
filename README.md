@@ -1,6 +1,6 @@
 # Goodson Gardens
 
-A frontend website showcasing a local landscaping business. The purpose of the website is to create a web presence for the business, to start a conversation, and to attract additional clients. 
+A frontend website showcasing a local landscaping business, intended to be bright in colour and fun in design with easy navigation and accessibility for most users. 
 
 # Link to live site
 https://ameliagoodson.github.io/Goodson-Gardens/
