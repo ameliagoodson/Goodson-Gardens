@@ -432,6 +432,9 @@ input {
 		width: 200px;
 		margin: auto;
 	}
+	.btn-top {
+		right: 80px;
+	}
 }
 @media screen and (min-width: 992px) {
 	.page-container {
@@ -442,6 +445,9 @@ input {
 	.jumbotron-img {
 		max-height: 35vh;
 		object-fit: cover;
+	}
+	.btn-top {
+		right: 150px;
 	}
 }
 @media screen and (min-width: 1200px) {
