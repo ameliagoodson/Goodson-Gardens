@@ -86,21 +86,25 @@ html {
 	margin: 0px;
 }
 .img-icon-up {
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 }
 .btn-top {
-	background-color: var(--darkjunglegreen);
 	outline: none;
 	border: none;
-	color: white;
-	border-radius: 50%;
 	padding: 5px;
 	margin: 5px;
 	position: fixed;
 	right: 0px;
 	z-index: 99;
 	display: none;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
+}
+.btn-top h4 {
+	color: var(--redcrayola);
+	margin: 0px;
+	font-size: 18px;
 }
 .show {
 	display: block;
