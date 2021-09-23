@@ -85,6 +85,26 @@ html {
 	padding: 0px;
 	margin: 0px;
 }
+.img-icon-up {
+	width: 40px;
+	height: 40px;
+}
+.btn-top {
+	background-color: var(--darkjunglegreen);
+	outline: none;
+	border: none;
+	color: white;
+	border-radius: 50%;
+	padding: 5px;
+	margin: 5px;
+	position: fixed;
+	right: 0px;
+	z-index: 99;
+	display: none;
+}
+.show {
+	display: block;
+}
 
 /* MAIN CONTENT */
 .page-container {

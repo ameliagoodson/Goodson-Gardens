@@ -1,13 +1,8 @@
-// const button = document.querySelector('.btn-hamburger')
-const button = $('.btn-hamburger')
-const navmenu = $('.navbar-hidden')
 
-button.click(() =>{
-  navmenu.toggle()
-})
 
-// Contact form validation
 $(document).ready(function () {
+
+  // Contact form validation
   $(".btn-contact").click((event) => {
     event.preventDefault();
 
@@ -27,4 +22,26 @@ $(document).ready(function () {
       status.append("<div>Please enter a message</div>");
     }
   });
+  // Mobile navigation toggle
+    const buttonMenu = $('.btn-hamburger')
+    const navMenu = $('.navbar-hidden')
+
+    buttonMenu.click(() =>{
+      navMenu.toggle()
+    })
+  // Back to top button
+  const buttonTop = $('.btn-top')
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        buttonTop.addClass('show')
+    }
+    else buttonTop.removeClass('show')
+    })
+
+  buttonTop.click(function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0
+  })
+  
 });
