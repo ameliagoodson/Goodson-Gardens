@@ -101,7 +101,7 @@ html {
 	background-color: rgba(255, 255, 255, 0.9);
 	border-radius: 5px;
 }
-.btn-top h4 {
+.btn-top h3 {
 	color: var(--redcrayola);
 	margin: 0px;
 	font-size: 18px;
