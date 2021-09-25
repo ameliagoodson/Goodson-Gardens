@@ -54,11 +54,18 @@ html {
 	z-index: 999;
 	font-size: 20px;
 	display: block;
-	background: rgba(255, 255, 255, 0.5);
-	padding: 5px 10px;
+	background: rgba(255, 255, 255, 0.8);
+	padding: 10px 10px;
 	position: absolute;
-	bottom: 200px;
+	top: 120px;
+	text-align: center;
 }
+@media screen and (min-width: 480px) {
+	.modalcaption {
+		top: 150px;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.main-container {
 		width: 70%;
@@ -71,5 +78,9 @@ html {
 	.img-gallery {
 		width: 130px;
 		height: 130px;
+	}
+	.modalcaption {
+		top: 80px;
+		font-size: 24px;
 	}
 }

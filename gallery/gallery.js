@@ -7,12 +7,11 @@ var images = document.querySelectorAll('.img-gallery')
 images.forEach(img => {
     img.addEventListener('click', function () {
         modalbox.className = 'active'
-        
         var modalImg = document.createElement('img') 
         modalImg.className = 'modalimg'
         modalImg.src = img.src
 
-        var modalCaption = document.createElement('P')
+        var modalCaption = document.createElement('p')
         var caption = document.createTextNode(img.alt)
         modalCaption.className = 'modalcaption'
         modalCaption.appendChild(caption)
