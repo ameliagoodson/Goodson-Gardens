@@ -1,6 +1,8 @@
 # Goodson Gardens
 
-A frontend website showcasing a local landscaping business, intended to be bright in colour and fun in design with easy navigation and accessibility for most users. 
+Website showcasing a small (semi-fictional) landscaping business. Content and assets all original unless otherwise indicated. 
+
+Design is clean with white background and bold, bright photos to create contrast, interest, and highlight the business. The waratah logo reflects the location of the business and the business owner's fondness for waratahs. The site features easy navigation with multiple navigation bars, a back to top button and embedded links for contacting and booking with the business. High accessibility score tested with WAVE.  
 
 # Link to live site
 https://ameliagoodson.github.io/Goodson-Gardens/
